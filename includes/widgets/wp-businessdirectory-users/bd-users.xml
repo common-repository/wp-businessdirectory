@@ -1,0 +1,93 @@
+<form>
+    <fieldset name="basic" addfieldpath="/administrator/components/com_menus/models/fields">
+        <field name="business_usergroups" type="usergrouplist"
+            label="MOD_JBUSINESS_USER_GROUPS_LABEL"
+            description="MOD_JBUSINESS_USER_GROUPS_DESC" 
+            default="8"
+            multiple="true"
+			size="6" />
+
+        <field
+            name="showbusinessownercheck"
+            type="radio"
+            label="MOD_JBUSINESS_USER_FIELD_SHOW_BUSINESS_OWNER_CHECK"
+            description="MOD_JBUSINESS_USER_FIELD_SHOW_BUSINESS_OWNER_CHECK_DESC"
+            class="btn-group btn-group-yesno"
+            default="0"
+            filter="integer"
+            >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field
+            name="showregistration"
+            type="radio"
+            label="MOD_JBUSINESS_USER_FIELD_SHOW_REGISTRATION"
+            description="MOD_JBUSINESS_USER_FIELD_SHOW_REGISTRATION_DESC"
+            class="btn-group btn-group-yesno"
+            default="0"
+            filter="integer"
+            >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field
+            name="socialloging"
+            type="radio"
+            label="MOD_JBUSINESS_USER_FIELD_SOCIAL_LOGIN_LABEL"
+            description="MOD_JBUSINESS_USER_FIELD_SOCIAL_LOGIN_DESC"
+            class="btn-group btn-group-yesno"
+            default="0"
+            filter="integer"
+            >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        
+        <field
+            name="showcart"
+            type="radio"
+            label="MOD_JBUSINESS_USER_FIELD_SHOW_CART_LABEL"
+            description="MOD_JBUSINESS_USER_FIELD_SHOW_CART_DESC"
+            class="btn-group btn-group-yesno"
+            default="0"
+            filter="integer"
+            >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        
+        <field
+            name="showcreatelisting"
+            type="radio"
+            label="MOD_JBUSINESS_USER_FIELD_SHOW_CREATE_LISTING_LABEL"
+            description="MOD_JBUSINESS_USER_FIELD_SHOW_CREATE_LISTING_DESC"
+            class="btn-group btn-group-yesno"
+            default="0"
+            filter="integer"
+            >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        
+    </fieldset>
+
+    <fieldset name="advanced">
+        <field
+            name="layout"
+            type="modulelayout"
+            label="JFIELD_ALT_LAYOUT_LABEL"
+            description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+        />
+
+        <field
+            name="moduleclass_sfx"
+            type="textarea"
+            label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+            description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+            rows="3"
+        />
+    </fieldset>
+</form>

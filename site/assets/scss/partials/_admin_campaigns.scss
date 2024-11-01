@@ -1,0 +1,58 @@
+$lightGray: #828181;
+$disabledGray: #dcdcdc;
+
+@mixin card-hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+.jbd-container{
+	.campaign-container {
+	    color: $lightGray;
+	
+	    .boxed {
+	        max-width: none !important;
+	    }
+	
+	    .plans-container {
+	        .no-plans {
+	            text-align:center;
+
+				.no-items {
+					content:url("../images/empty_folder.png");
+					width: 50%;
+					display:inline !important;
+				}
+	        }
+	
+	        .plan-item {
+	            font-weight: bold;
+	            cursor: pointer;
+	
+	            &.disabled {
+	                opacity: 0.65;
+	
+	                .selected {
+	                    transition: unset;
+	                    box-shadow: unset;
+	                    top: unset;
+	                    border: unset;
+	                    background-color: unset;
+	                }
+	            }
+	
+	            &:not(.disabled):hover {
+	                @include card-hover();
+	            }
+	
+	            .selected {
+	                @include card-hover();
+	            }
+	        }
+	    }
+	}
+	
+}

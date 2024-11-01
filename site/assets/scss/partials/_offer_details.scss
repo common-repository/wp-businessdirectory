@@ -1,0 +1,236 @@
+$jbd-Orange:#ff9c00;
+$jbd-Blue:#35cbc9;
+$jbd-LightBlue:#9cd8d8;
+$jbd-Grey:#777777;
+$darkGreen:#2BC253;
+
+@mixin borderRadius{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+@mixin colorTextAlign {
+    color: white;
+    text-align: center;
+    float: none;
+}
+/*-------------------------New offer detail view--------------------------*/
+.jbd-container{
+
+	.offer-details-1{
+		.offer-info{
+			line-height: 26px;
+		}
+
+		.price-value{
+			font-size: 20px;
+		}
+
+		.price-old.price-value{
+			font-size: 16px;
+		}
+
+		.offer-business{
+			margin-left: 50px;
+
+			.business-head{
+				font-size: 18px;
+				font-weight: 500;
+				color: #111;
+				line-height: 60px;
+				padding-left: 25px;
+			}
+
+			.business-name{
+				font-size: 16px;
+				line-height: 40px;
+				color: #111;
+				padding-left: 25px;
+			}
+
+			.business-item{
+				line-height: 40px;
+			}
+		}
+
+		h3{
+			font-size: 20px;
+		}
+
+		#add-review{
+			margin-top: 20px;
+		}
+
+	}
+
+	.offer-details-3 {
+		padding: 20px;
+		background-color: $jbd-White;
+		border-radius: 5px;
+		line-height: 20px;
+
+		.section-title {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		.gallery-main-slider{
+			margin: 0;
+		}
+
+		.offer-main-info{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+		}
+
+		.price-container{
+			padding: 30px 0;
+			font-size: 18px;
+			line-height: 25px;
+		}
+
+		.select {
+			width: auto !important;
+		}
+
+		.old-price {
+			opacity: 0.55;
+			font-size: 14px;
+		}
+
+		.price-formatted{
+			display: inline-flex;
+		}
+
+		.price-new {
+			font-size: 25px;
+		}
+
+		.content-box {
+			background: #fff;
+			margin-bottom: 20px;
+			border: none;
+			padding: 0;
+			
+			h1{
+				margin: 0;
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 1.75rem;
+			}
+
+			.jbtn-order-info {
+				padding: 5px 80px 5px 10px !important;
+			}
+
+			.jbtn-order-btn {
+				a {
+					line-height: 90%;
+					font-size: 16px;
+				}
+			}
+		}
+
+		h3{
+			font-size: 20px;
+		}		
+
+		#add-review{
+			margin-top: 20px;
+		}
+	}
+
+	.deleteButton{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	/*-----------------------END New offer detail view------------------------*/
+	    
+	/*----------------------offer order-----------------------------*/
+	
+	.offer-guest-details {
+	    margin-bottom: 5px;
+	    padding: 5px;
+	}
+	
+	.offer-order-items  {
+	    table {
+			margin-bottom: 30px;
+			width: 100%;
+		
+	        td {
+	            padding: 5px;
+	        }
+	    }
+	}
+
+	.offer-quantity-info {
+		color: #a34041;
+		font-weight: bold;
+	}
+	
+	/*----------------------END offer order-----------------------------*/
+	
+	/*-----------------process container ------------- */
+	
+	.process-container{
+	    display: block;
+	    margin-bottom: 20px;
+	
+	    p {
+	        margin-top: 10px;
+	    }
+	}
+	
+	.meter {
+	    clear: both;
+	    height: 10px;
+	    position: relative;
+	    background: #555;
+	    -moz-border-radius: 25px;
+	    -webkit-border-radius: 25px;
+	    border-radius: 25px;
+	    padding: 3px;
+	    -webkit-box-shadow: inset 0 -1px 1px #ffffff4d;
+	    -moz-box-shadow     : inset 0 -1px 1px rgba(255,255,255,0.3);
+	    box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+	    margin-bottom: 5px;
+	
+	    span {
+	        display: block;
+	        height: 100%;
+	        background-color: $darkGreen;
+	        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, $darkGreen ), color-stop(1, #54f054 ) );
+	        background-image: -webkit-linear-gradient(center bottom, $darkGreen
+	        37%, #54f054 69% );
+	        background-image: -moz-linear-gradient(center bottom, $darkGreen
+	        37%, #54f054 69% );
+	        background-image: -ms-linear-gradient(center bottom, $darkGreen
+	        37%, #54f054 69% );
+	        background-image: -o-linear-gradient(center bottom, $darkGreen 37%,
+	                #54f054 69% );
+	        -webkit-box-shadow: inset 0 2px 9px #ffffff4d, inset 0
+	            -2px 6px #00000066;
+	        -moz-box-shadow: inset 0 2px 9px #ffffff4d, inset 0 -2px
+	        6px #00000066;
+	        box-shadow: inset 0 2px 9px #ffffff4d, inset 0 -2px
+	        6px #00000066;
+	        position: relative;
+	        overflow: hidden;
+	    }
+	}
+	
+	/*-----------------process container ------------- */
+	
+	/*-----------------offer price ------------- */
+	/*-----------------end offer price ------------- */
+	
+	.btn-remove-cart {
+		background-color: #E74C3C !important;
+	}
+}

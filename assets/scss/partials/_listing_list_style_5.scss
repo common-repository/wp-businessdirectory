@@ -1,0 +1,107 @@
+$breakpoint: 769px;
+
+.map-fixed-right {
+    position: fixed !important;
+    right: 0;
+    z-index: 0;
+    height:100%;
+
+    @media only screen and (max-width: $breakpoint) {
+        display: none;
+    }
+}
+
+/*-------------- search results style 5 ----------------*/
+
+.extend-style5{
+    min-height: 600px;
+
+    .map-view{
+        position: relative;
+    }
+
+    #style5-map-container {
+        position: fixed;
+        width: inherit;
+    }
+
+    .grid-item {
+        margin: 0;
+
+        .grid-content{
+            height: 220px !important;
+
+            .info{
+                a {
+                    padding: 5px 7px;
+                    font-size: 10px;
+                }
+                .hover_info {
+                    font-size: 11px;
+                    line-height: 1.5;
+                    padding: 5px 15px 0;
+                }
+
+                .company-website {
+                    font-size: 11px;
+                    padding: 0;
+                }
+            } 
+        } 
+    }
+
+    .info h3 {
+        padding: 10px 0 5px 0;
+        font-size: 14px;
+    }
+    .grid-content .post-image {
+        margin: 0;
+    }
+
+    .grid-item-holder {
+        margin: 0 !important;
+        padding: 7px;
+        width: 50% !important;
+        float: left !important;
+    }
+
+    .selected-company {
+        background-color: green;
+    }
+}
+
+
+#map-listing-container{
+	overflow-y: scroll; 
+	scrollbar-width: thin;
+}
+
+@media (max-width: 1199px) {
+    .extend-style5 .map-view,
+    .extend-style5 .companies-view {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .extend-style5{
+        .companies-view {
+            max-height: none;
+            overflow: hidden;
+        }
+
+        .grid-item .grid-content .info a {
+            font-size: 10px;
+            padding: 7px 6px;
+        }
+    } 
+}
+
+@media (max-width: 500px) {
+    .extend-style5 .grid-item-holder {
+        width: 100% !important;
+    }
+}
+/*--------- end search results style 5 ----------*/
+

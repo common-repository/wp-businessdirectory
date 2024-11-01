@@ -1,0 +1,144 @@
+<form>
+        <fieldset name="basic" addfieldpath="/models/fields" >
+                <field
+                        name="viewtype"
+                        type="radio"
+                        class="btn-group"
+                        default="menu"
+                        label="View type"
+                        description="Choose the module layout">
+                        <option
+                                value="menu">Menu</option>
+                        <option
+                                value="slider">Slider</option>
+                        <option
+                                value="slider_2">Slider 2</option>
+                        <option
+                                value="simple">Simple</option>
+                        <option
+                                value="accordion">Accordion</option>
+                        <option
+                                value="grid_icons">Grid Icons</option>
+                        <option
+                                value="grid">Grid</option>
+                        <option
+                                value="boxes">Boxes</option>
+                        <option
+                                value="grid_image">Grid image</option>
+                </field>
+
+                <field
+                                name="phoneGridOption"
+                                type="phonegridoptions"
+                                multiple="false"
+                                default="col-12"
+                                label="Mobile Layout"
+                                description="Select Mobile Layout" >
+                </field>
+
+                <field
+                                name="tabletGridOption"
+                                type="tabletgridoptions"
+                                multiple="false"
+                                default="col-md-3"
+                                label="Tablet Layout"
+                                description="Select Tablet Layout" >
+                </field>
+
+                <field
+                                name="desktopGridOption"
+                                type="desktopgridoptions"
+                                multiple="false"
+                                default="col-lg-4"
+                                label="Desktop Layout"
+                                description="Select Desktop Layout" >
+                </field>
+
+                <field
+                        name="categoryIds"
+                        type="businesscategories"
+                        multiple="true"
+			size="6"
+                        default="0"
+                        label="Categories"
+                        category_type="1"
+                        description="Select categories">
+                </field>
+
+
+                <field
+                                name="linkquoterequests"
+                                type="radio"
+                                class="btn-group"
+                                default="0"
+                                label="Link with quote requests"
+                                description="Display the quote request dialog instead of the search results (will work only with JBD Quote Requests app)">
+                        <option
+                                        value="1">JYES</option>
+                        <option
+                                        value="0">JNO</option>
+                </field>
+
+                <field
+                                name="showrelated"
+                                type="radio"
+                                class="btn-group"
+                                default="0"
+                                label="Show related categories"
+                                description="Display the related categories to the searched category - it will be shown on when performing a category search on the results page">
+                        <option
+                                        value="1">JYES</option>
+                        <option
+                                        value="0">JNO</option>
+                </field>
+
+                <field
+                                name="showviewall"
+                                type="radio"
+                                class="btn-group"
+                                default="0"
+                                label="Show view all"
+                                description="Display view all link at the bottom">
+                        <option
+                                        value="1">JYES</option>
+                        <option
+                                        value="0">JNO</option>
+                </field>
+        </fieldset>
+
+        <fieldset name="slider" label="Slider view options">
+                <field
+                                name="nrVisibleItems"
+                                type="text"
+                                default="4"
+                                label="Visible items"
+                                description="Number of business that will be visible at one time" />
+
+                <field
+                                name="nrItemsToScrool"
+                                type="text"
+                                default="1"
+                                label="Number of items to scroll"
+                                description="Number of businesses that will be scrolled" />
+
+                <field
+                                name="autoplay"
+                                type="radio"
+                                class="btn-group"
+                                default="0"
+                                label="Autoplay"
+                                description="Automatic scroll">
+                        <option
+                                        value="1">JYES</option>
+                        <option
+                                        value="0">JNO</option>
+                </field>
+
+                <field
+                                name="autoplaySpeed"
+                                type="text"
+                                default="2000"
+                                label="Autoplay Speed"
+                                description="Speed of the autoplay" />
+        </fieldset>
+</form>

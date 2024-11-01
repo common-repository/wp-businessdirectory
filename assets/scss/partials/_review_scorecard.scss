@@ -1,0 +1,32 @@
+.review-scorecard{
+    margin: 0 auto;
+    padding: 10px;
+
+    .heading {
+        font-size: 25px;
+        margin-right: 25px;
+    }
+
+    .rating.la {
+        font-size: 25px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .bar-container {
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+        color: white;
+    }
+
+    .bar-5 {height: 18px; background-color: #4CAF50;}
+    .bar-4 {height: 18px; background-color: #2196F3;}
+    .bar-3 {height: 18px; background-color: #00bcd4;}
+    .bar-2 {height: 18px; background-color: #ff9800;}
+    .bar-1 {height: 18px; background-color: #f44336;}
+}

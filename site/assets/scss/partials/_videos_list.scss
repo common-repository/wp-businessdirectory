@@ -1,0 +1,306 @@
+.videos-list-view {
+
+  .video-btn {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    background: #344F6E;
+    border-radius: 0.4rem;
+    padding: 0.7em 2rem;
+    margin-right: 1rem;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    text-align: center;
+    min-width: 10rem;
+  }
+
+  .card-video {
+    display: block;
+    padding: 1rem;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 1.2rem 2.7rem rgba(52, 79, 110, 0.1);
+    box-shadow: 0px 1.2rem 2.7rem rgba(52, 79, 110, 0.1);
+    border-radius: 0.9rem;
+    color: #1E2E42;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    height: 100%;
+
+    .card-video-wrap {
+      position: relative;
+      overflow: hidden;
+      height: 0;
+      padding-bottom: 78%;
+      border-radius: 0.4rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+
+      iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+            object-fit: cover;
+      }
+
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+            object-fit: cover;
+      }
+
+      .play-pause {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background: #1E2E42;
+        border-radius: 0.8rem;
+        width: 72px;
+        height: 56px;
+        font-size: 2.2rem;
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease;
+
+
+        &:hover {
+          background: rgba(255, 0, 0, 0.9);
+        }
+
+        i {
+          color: #fff !important;
+          font-size: 30px;
+        }
+      }
+    }
+
+    .card-video-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 1.1rem 0;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      .video-category {
+        background: rgba(93, 180, 70, 0.2);
+        color: #5DB446;
+      }
+
+      .video-duration {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.7rem;
+        color: #000000;
+      }
+    }
+
+    .card-video-text {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.6rem;
+      color: #1E2E42;
+    }
+  }
+}
+
+.video-details{
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  .video-wrap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 58%;
+    border-radius: 0.9rem;
+    margin-bottom: 4rem;
+    position: relative;
+  }
+
+  .video-wrap > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .video-wrap > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-play-pause {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+    background: #FF0000;
+    border-radius: 0.8rem;
+    width: 7.2rem;
+    height: 5.6rem;
+    font-size: 2.2rem;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    cursor: pointer;
+
+    .la{
+      color: #fff;
+    }
+  }
+  
+  .video-play-pause .icon-play3 {
+    margin-left: 0.4rem;
+  }
+
+  .video-title{
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height: 3.6rem;
+    font-weight: 600;
+  }
+
+  .video-content{
+    padding: 1px 0;
+    color: #344F6E;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 1.2rem 2.7rem rgba(52, 79, 110, 0.1);
+            box-shadow: 0px 1.2rem 2.7rem rgba(52, 79, 110, 0.1);
+    border-radius: 0.9rem;
+    padding: 2rem 2rem 2rem 2rem;
+    min-height: 8.2rem;
+    margin-bottom: 5rem;
+
+    .video-box{
+      font-size: 20px;
+      position: relative;
+      font-weight: bold;
+      line-height: 2.6rem;
+      color: #344F6E;
+      cursor: pointer;
+      padding: 0.8rem 3rem 0.9rem 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .accordion-plus {
+      height: 1.4rem;
+      width: 1.4rem;
+      position: absolute;
+      top: 50%;
+      right: 1.5rem;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      &:before {
+        width: 0.2rem;
+        height: 100%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        position: absolute;
+        content: '';
+        background: #000;
+      }
+      &:after {
+        height: 0.2rem;
+        width: 100%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        content: '';
+        background: #000;
+      }
+    }
+
+    .without-before-element:before {
+      content: none !important;
+    }
+    
+
+    .video-description{
+      font-weight: 500;
+      line-height: 1.5;
+      color: #344F6E;
+    }
+  }
+
+  .related-videos{
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+  }
+  
+}

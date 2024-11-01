@@ -1,0 +1,59 @@
+.jbd-container{
+	.event-booking-details{
+	
+	    table{
+	        width: 100%;
+	
+	        td {
+	            padding: 2px;
+	        }
+	    }
+	
+	    .booking-tickets{
+	        background-color: #FBFBFB;
+	        padding: 15px;
+	        margin-bottom: 15px;
+			padding-left: 0;
+	    }
+	
+	    .event-image{
+	            float: left;
+	            margin-right: 2%;
+	
+	        img {
+	            border: 1px solid $jbd-BorderGrey;
+	            height: 80px;
+	            width: 80px;
+	            border-radius: 50%;
+	        }
+	    }
+	}
+	    
+	.booking-guest-details{
+	    margin-bottom: 15px;
+	}
+	    
+	.booking-tickets table{
+	    width: 100%;
+	
+	    td {
+	        /* text-align: right; */
+	
+	        &:first-child {
+	        /*        text-align: left; */
+	        }
+	    }
+	}
+	
+	.sold-tickets{
+	    padding: 10px;
+	    background-color: #FAFAFA;
+	}
+	
+	.event-guest-booking-details {
+	    background-color: #FAFAFA;
+	    padding: 15px;
+	    margin-bottom: 15px;
+	}
+	
+}

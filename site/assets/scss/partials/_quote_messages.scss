@@ -1,0 +1,120 @@
+$chatBackground: #faf4f7;
+$sentMsgColor: #565a5a;
+$rcvdMsgColor: #9593ff;
+$textColor: #fff;
+$inputTextColor: #777777;
+$sendBtnColor: #565a5a;
+
+@mixin chat-bubble($bckgr) {
+  background-color: $bckgr;
+  border-radius: 2px;
+  border: 1px solid $bckgr;
+  padding: 10px;
+  color: $textColor;
+  font-size: 14px;
+}
+
+.jbd-container{
+	.chat-container {
+	  height: 500px;
+	  background-color: $chatBackground;
+	  padding: 5px;
+	
+	  /* width */
+	  ::-webkit-scrollbar {
+	    width: 10px;
+	  }
+	
+	  /* Track */
+	  ::-webkit-scrollbar-track {
+	    background: $chatBackground;
+	  }
+	
+	  /* Handle */
+	  ::-webkit-scrollbar-thumb {
+	    background: #888;
+	  }
+	
+	  /* Handle on hover */
+	  ::-webkit-scrollbar-thumb:hover {
+	    background: #555;
+	  }
+	
+	  .loading-quote-messages {
+	    text-align: center;
+	    height: 90%;
+	
+	    .spinner {
+	      content: url("../images/spinner.gif");
+	      display: inline !important;
+	      width: 30%;
+	      margin-bottom: 10px;
+	    }
+	  }
+	
+	  .chat-body {
+	    height: 90%;
+	    padding: 5px;
+	    padding-top: 20px;
+	    overflow-y: scroll;
+	    overflow-x: hidden;
+	
+	    .msg {
+	      width: 100%;
+	      display: inline-block;
+	
+	      .msg-snt {
+	        float: right;
+	        max-width: 50%;
+	        .msg-txt {
+	          @include chat-bubble($sentMsgColor);
+	        }
+	
+	        .msg-date {
+	          float: right;
+	        }
+	      }
+	
+	      .msg-rcvd {
+	        float: left;
+	        max-width: 50%;
+	        .msg-txt {
+	          @include chat-bubble($rcvdMsgColor);
+	        }
+	
+	        .msg-date {
+	          float: left;
+	        }
+	      }
+	
+	      .msg-date {
+	        margin-top: 10px;
+	        font-size: 12px;
+	        color: gray;
+	      }
+	    }
+	  }
+	
+	  .chat-footer {
+	    border-top: 1px solid gray;
+	    margin-top: 10px;
+	
+	    .chat-textbox {
+	      width: 100%;
+	      border: none;
+	      height: 40px;
+	      background-color: $chatBackground;
+	      color: $inputTextColor;
+	    }
+	
+	    .btn-send {
+	      cursor: pointer;
+	
+	      i {
+	        font-size: 35px;
+	        color: $sendBtnColor !important;
+	      }
+	    }
+	  }
+	}
+}

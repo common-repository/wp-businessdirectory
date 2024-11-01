@@ -1,0 +1,105 @@
+$darkGrey: #767676;
+$noMarginBottom: 0px !important;
+
+@mixin bottom-border($width: 1px, $color: black) {
+    border-bottom: $width solid $color;
+}
+.jbd-container {
+    .three-dot {
+        display: inline;
+        width: 27px;
+        height: 27px;
+        border-radius: 100px;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.4s ease;
+
+        &:hover {
+            background-color: #efefef;
+            cursor: pointer;
+        }
+        &:after {
+            content: '\2807';
+            font-size: 1.2em;
+            color: black;
+            margin-left: 15%;
+        }
+    }
+
+    .item {
+        &-actions-tooltip {
+            background-color: white;
+            color: #555555;
+            padding: 15px;
+            white-space: nowrap;
+
+            .item {
+                font-size: 14px;
+                cursor: pointer;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: $darkGrey;
+                }
+            }
+        }
+    }
+
+    .upgrade-package-details {
+
+        padding: 10px;
+
+        .head {
+            @include bottom-border(1px, $darkGrey);
+            margin-bottom: 25px;
+
+            .title {
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+
+            .note {
+                color: $darkGrey;
+                font-size: 12px;
+            }
+        }
+
+        .body {
+            font-size: 16px;
+            margin-bottom: $noMarginBottom;
+
+            .package-list {
+                margin-bottom: 30px !important;
+
+                .item {
+                    padding: 5px;
+                    @include bottom-border(1px, #cccccc);
+                    color: $darkGrey;
+
+                    .main {
+                        .package-radio {
+                            cursor: pointer;
+                        }
+
+                        .name {
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .details {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .footer {
+                margin-bottom: $noMarginBottom;
+                font-size: 15px;
+            }
+        }
+
+        div {
+            margin-bottom: 17px;
+        }
+    }
+}

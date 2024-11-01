@@ -1,0 +1,757 @@
+#companies-search * {
+  box-sizing: border-box;
+}
+
+/* CSS Stylesheet for the business listing, offer and event search modules  */
+
+#companies-search {
+  width: 100%;
+}
+
+#companies-search h1 {
+  font-size: 30px;
+}
+
+#companies-search .search-description {
+  font-size    : 18px;
+  margin-bottom: 45px;
+}
+
+#companies-search textarea:focus,
+#companies-search input:focus,
+#companies-search select:focus,
+#companies-search password:focus {
+  border-color: rgba(82, 168, 236, 0.9);
+  box-shadow  : 0 1px 1px rgba(0, 2, 2, 0.075) inset, 0 0 3px rgba(82, 168, 236, 0.7) inset;
+  outline     : 0 none;
+}
+
+#companies-search textarea.required,
+#companies-search input.required,
+#companies-search select.required,
+#companies-search div.required a {
+  border-color: rgba(82, 168, 236, 0.9) !important;
+  box-shadow  : 0 1px 1px rgba(0, 5, 5, 0.085) inset, 0 0 3px rgba(254, 9, 0, 1) inset !important;
+  outline     : 0 none;
+}
+
+.ui-autocomplete-loading {
+  background: white url('../images/loading_small.gif') right center no-repeat;
+}
+
+.ui-autocomplete-loading {
+  height : 15px;
+  width  : 17px;
+  display: inline-block;
+}
+
+#searchform .form-container {
+  display    : flex;
+  align-items: center;
+  flex-wrap  : wrap;
+}
+
+#searchform .fields-container {
+  display    : flex;
+  align-items: center;
+  flex-wrap  : wrap;
+}
+
+#searchform .form-field {
+  margin     : 5px 10px 5px 0;
+  line-height: 40px;
+  height     : 40px;
+}
+
+#searchform .form-field.custom {
+  height: auto;
+}
+
+#searchform .form-field div.custom-div {
+  line-height : 40px;
+  margin-right: 5px;
+  display     : inline;
+}
+
+#searchform .form-field div.custom-div input {
+  margin     : 0 3px 0 0;
+  line-height: 20px;
+}
+
+#searchform .form-field label {
+  margin     : 0 10px 0 0;
+  line-height: 40px;
+  display    : inline;
+}
+
+#searchform .has-text-left {
+  display    : flex;
+  margin-left: 10px;
+}
+
+
+#searchform .form-field label.text-label {
+  display: none;
+}
+
+#searchform .form-field select,
+#searchform .form-field input[type="text"] {
+  border-color    : #9B9B9B #EDEDED #DDDDDD #C2C2C2;
+  background-color: #fcfcfc;
+  border-radius   : 5px;
+  display         : inline-block;
+  color           : #333333;
+  font-size       : 14px;
+  font-weight     : normal;
+  height          : 40px;
+  line-height     : 40px;
+  margin          : 0;
+  width           : 200px;
+  position        : relative;
+}
+
+#searchform #searchkeyword {
+  width: 260px;
+}
+
+#searchform .chosen-container-single {
+  height : 40px;
+  display: inherit;
+}
+
+#searchform .chosen-container-single .chosen-single {
+  height: 40px;
+}
+
+#searchform .chosen-container-single .chosen-single span {
+  line-height: 40px;
+  color      : #333333;
+  font-size  : 14px;
+  text-align : left;
+}
+
+#searchform .chosen-container-single .chosen-search input[type="text"] {
+  width: 100%;
+}
+
+
+#searchform .chosen-container-single .chosen-single {
+  background: #fcfcfc;
+}
+
+#searchform .chosen-container-single .chosen-single div:before {
+  font-family    : LineAwesome;
+  font-style     : normal;
+  font-weight    : normal;
+  text-decoration: inherit;
+  content        : "\f110";
+  font-size      : 16px;
+  display        : block;
+  line-height    : 40px;
+  text-align     : center;
+  color          : #555;
+
+}
+
+#searchform .chosen-container-single .chosen-single div {
+  width: 23px;
+}
+
+#searchform .form-field .detail_box {
+  margin  : 5px 10px 0 0;
+  position: relative;
+  width   : 222px;
+}
+
+#searchform .form-field .detail_box div {
+  margin: 5px 10px 0 0;
+}
+
+#searchform .form-field input {}
+
+#searchform .form-field input.dir-date {}
+
+#searchform .input-append button {
+  height  : 39px;
+  right   : 0;
+  top     : 1px;
+  position: absolute;
+}
+
+#searchform .form-field select {
+  height : 40px;
+  padding: 0 0 0 7px;
+}
+
+
+.zipcode-container {
+  position: relative;
+
+}
+
+
+#companies-search.vertical {
+  padding: 5px 7px;
+}
+
+#companies-search.vertical input[type="text"] {
+  width    : 100% !important;
+  max-width: 100%;
+}
+
+#companies-search.vertical .input-append {
+  width: 100% !important;
+}
+
+#companies-search.vertical #zipcode {
+  width: 100% !important;
+}
+
+#companies-search.vertical .front-calendar {
+  width    : 100%;
+  max-width: 100%;
+}
+
+#companies-search.vertical .form-field {
+  margin : 7px 0 !important;
+  padding: 0 !important;
+  width  : 100%;
+  height : auto;
+}
+
+#companies-search.vertical .form-field select {
+  width    : 100% !important;
+  font-size: 13px;
+  display  : block;
+}
+
+#companies-search.vertical label {
+  font-size: 13px;
+  top      : 0px;
+}
+
+#companies-search.vertical .search-dir-button {
+  margin-top: 15px;
+}
+
+#companies-search.vertical #searchform .fields-container {
+  margin-right: 0;
+}
+
+#companies-search.vertical #searchform .fields-container {
+  background-color: transparent;
+}
+
+#companies-search.vertical.search-style-3 #searchform .form-field input {
+  padding-left: 0;
+}
+
+
+#companies-search.vertical #searchform .jbd-search-bar {
+  padding         : 0;
+  background-color: transparent;
+}
+
+#companies-search.vertical.search-style-3 .has-text-left {
+  display: block;
+}
+
+#searchform .search-dir-button {
+  font-weight   : bold;
+  padding       : 0px 10px;
+  color         : #FFFFFF;
+  font-size     : 17px;
+  line-height   : 40px;
+  height        : 40px;
+  text-transform: none !important;
+  position      : relative;
+}
+
+#current-search {
+  color      : #FFFFFF;
+  font-size  : 1.1em;
+  line-height: 40px;
+  padding    : 0 10px;
+}
+
+#categories-link {
+  font-size  : 1.3em;
+  color      : #FFFFFF;
+  line-height: 32px;
+  padding    : 4px;
+  margin-left: 100px;
+}
+
+.custom-combobox {
+  position: relative;
+  display : inline-block;
+}
+
+.custom-combobox-toggle {
+  /* position: absolute;  */
+  top           : 0;
+  bottom        : 0;
+  /* margin-left: -1px; */
+  padding       : 0;
+  /* support    : IE7 */
+  *height       : 1.7em;
+  *top          : 0.1em;
+}
+
+.custom-combobox-input {
+  margin : 0;
+  padding: 0.3em;
+}
+
+/* SEARCH EFFECT OVERLAY */
+.search-background-overlay {
+  visibility: hidden;
+  width     : 100vw;
+  height    : 100vh;
+  position  : fixed;
+  top       : 0;
+  left      : 0;
+  background: #000;
+  opacity   : 0;
+  transition: all .7s;
+}
+
+.overlay-active {
+  visibility: visible;
+  z-index   : 1000;
+  opacity   : 0.3;
+  transition: all .7s;
+}
+
+
+.search-btn-index {
+  z-index: 1001 !important;
+}
+
+.higher-index {
+  z-index: 1002 !important;
+}
+
+.highest-index {
+  z-index: 1004 !important;
+}
+
+#searchform .higher-index .form-field select,
+#searchform .higher-index .form-field input[type="text"],
+#searchform .higher-index .chosen-container-single .chosen-single{
+  background: #fff;
+}
+
+/*-- autocomplete ---*/
+
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+}
+
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+  height: 200px;
+}
+
+.ui-autocomplete.ui-front.ui-menu {
+  z-index: 11000 !important;
+}
+
+#searchform .ui-button {
+  height     : 29px;
+  margin-left: 1px;
+}
+
+.ui-icon-triangle-1-s {
+  background-position: -128px 0;
+}
+
+#startDate_img,
+#endDate_img {
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+  border-image    : none;
+  height          : 40px;
+  position        : absolute;
+  right           : 0px;
+  z-index         : 1;
+  border-radius   : 0 4px 4px 0;
+  margin-left     : -1px;
+  display         : inline-block;
+  font-size       : 14px;
+  line-height     : 20px;
+  margin-bottom   : 0;
+  padding         : 4px 14px;
+  text-align      : center;
+  text-shadow     : 0 1px 1px rgba(255, 255, 255, 0.75);
+  border-color    : rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+}
+
+#companies-search .la la-bullseye {
+  background     : #eeeeee;
+  border-radius  : 0 5px 5px 0;
+  color          : #777;
+  cursor         : pointer;
+  font-size      : 18px;
+  height         : 39px;
+  line-height    : 39px;
+  position       : absolute;
+  right          : 1px;
+  text-align     : center;
+  top            : 1px;
+  width          : 31px;
+  z-index        : 1;
+  margin         : 0;
+  -moz-transition: all 0.5s ease;
+  -ms-transition : all 0.5s ease;
+  -o-transition  : all 0.5s ease;
+  transition     : all 0.5s ease;
+}
+
+#companies-search .la la-bullseye:hover {
+  font-size        : 23px;
+  background       : #FAFAFA;
+  -webkit-transform: translate3d(0, 0, 10px);
+  -moz-transform   : translate3d(0, 0, 10px);
+  -ms-transform    : translate3d(0, 0, 10px);
+  -o-transform     : translate3d(0, 0, 10px);
+}
+
+#companies-search .la la-map-marker,
+#companies-search .search .la la-search {
+  top        : 12px;
+  left       : 5px;
+  font-size  : 15px;
+  z-index    : 1;
+  position   : absolute;
+  cursor     : pointer;
+  text-align : center;
+  color      : #979797;
+  margin     : 0;
+  font-weight: 500;
+}
+
+#companies-search .la la-map-marker {
+  top      : 10px;
+  font-size: 18px;
+}
+
+#dir-search-preferences:before {
+  border-color: transparent transparent #ffffff;
+  border-style: solid;
+  border-width: 0 7px 8px;
+  top         : -8px;
+  content     : "";
+  height      : 0;
+  position    : absolute;
+  right       : 13px;
+  width       : 0;
+}
+
+
+#dir-search-preferences {
+  background: none repeat scroll 0 0 #ffffff;
+  border    : 1px solid #afafaf;
+  box-shadow: 1px 1px 0 rgba(80, 80, 80, 0.2);
+  color     : #333333;
+  display   : block;
+  padding   : 10px 10px;
+  position  : absolute;
+  right     : 0;
+  top       : 50px;
+  width     : 245px;
+  z-index   : 999;
+}
+
+#companies-search.vertical.search-style-3 #dir-search-preferences {
+  top: 90px;
+}
+
+
+#searchform h3.title {
+  font-size  : 19px;
+  line-height: 23px;
+}
+
+
+#searchform h3.title i.la la-close {
+  border-radius   : 50%;
+  background-color: #BABABA;
+  width           : auto;
+  height          : auto;
+  float           : right;
+  padding         : 5px 8px;
+  color           : #FAFAFA;
+  cursor          : pointer;
+  font-size       : 14px;
+}
+
+#searchform .geo-radius {
+  padding-bottom: 3px;
+}
+
+#searchform .geo-location {
+  clear      : both;
+  float      : right;
+  padding-top: 10px;
+  font-size  : 13px;
+}
+
+.geo-location .toggle {
+  background-color: #f5f5f5;
+  border-color    : #bbb #bbb #a2a2a2;
+  padding         : 4px 12px;
+  text-align      : center;
+  text-shadow     : 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration : none;
+  font-size       : 12px !important;
+  line-height     : 25px !important;
+}
+
+.geo-location .toggle.btn-on.active {
+  background-color: #83b802;
+  color           : #FFFFFF;
+}
+
+.geo-location .toggle.btn-off.active {
+  background-color: #bd362f;
+  color           : #FFFFFF;
+}
+
+#companies-map img {
+  width    : auto;
+  max-width: none;
+}
+
+
+.ui-menu-item .ui-menu-item-wrapper {
+  padding: 3px 7px !important;
+}
+
+.ui-menu-item .ui-state-active {
+  color: #555 !important;
+}
+
+
+.search-style-3 #searchform .jbd-search-bar {
+  display         : flex;
+  padding         : 15px;
+  padding-bottom  : 15px;
+  background-color: rgba(255, 255, 255, .2);
+  border-radius   : 5px;
+}
+
+
+.search-style-3 #searchform .fields-container {
+  background   : #fff;
+  border-radius: 4px;
+  margin-right : 10px;
+}
+
+
+.search-style-3 #searchform .form-field {
+  border-left     : 1px solid #e1e1e1;
+  background-color: #fff;
+}
+
+.search-style-3 #searchform .form-field:last-child {
+  border-right: none;
+}
+
+
+.search-style-3 #searchform .has-text-left {
+  display    : flex;
+  margin-left: 10px;
+}
+
+.search-style-3 #searchform .form-field input,
+.search-style-3 #searchform .form-field select {
+  border      : none;
+  padding-left: 7px;
+  border-style: none none none none;
+}
+
+.search-style-3 #searchform .form-field select,
+.search-style-3 #searchform .form-field input[type="text"] {
+  border-radius: 0;
+}
+
+#searchform .form-field label.text-label {
+  display: inherit;
+  color  : #333;
+}
+
+
+.search-style-3 .search-suggestions ul li {
+  padding: 0 4px;
+}
+
+.search-style-3 .search-suggestions ul li div:hover {
+  color: #ffa8a0;
+}
+
+.search-style-3 #searchform label {
+  margin: 0;
+  color : #333;
+}
+
+.search-style-3 #searchform .search-dir-button {
+  line-height: 50px;
+  height     : 50px;
+}
+
+.search-style-3 #searchform textarea:focus,
+.search-style-3 #searchform input:focus,
+.search-style-3 #searchform select:focus,
+.search-style-3 #searchform password:focus {
+  border-color: none;
+  box-shadow  : none;
+  outline     : none;
+}
+
+#companies-search.search-style-3 .chosen-single {
+  border    : none;
+  box-shadow: none;
+}
+
+
+@media (max-width: 576px) {
+  #dir-search-preferences {
+    left: 0;
+  }
+
+  #dir-search-preferences::before {
+    left: 13px;
+  }
+}
+
+/* Beating Animation */
+.dir-beat-animation {
+  -webkit-animation: Beat 1000ms infinite linear;
+  -moz-animation   : Beat 1000ms infinite linear;
+  -ms-animation    : Beat 1000ms infinite linear;
+  -o-animation     : Beat 1000ms infinite linear;
+  animation        : Beat 1000ms infinite linear;
+  color            : #d9534f !important;
+}
+
+@-o-keyframes Beat {
+  0% {
+    font-size: 18px;
+  }
+
+  50% {
+    font-size: 24px;
+  }
+
+  100% {
+    font-size: 18px;
+  }
+}
+
+@-moz-keyframes Beat {
+  0% {
+    font-size: 18px;
+  }
+
+  50% {
+    font-size: 24px;
+  }
+
+  100% {
+    font-size: 18px;
+  }
+}
+
+@-webkit-keyframes Beat {
+  0% {
+    font-size: 18px;
+  }
+
+  50% {
+    font-size: 24px;
+  }
+
+  100% {
+    font-size: 18px;
+  }
+}
+
+
+.geo-location .toggle.btn-on.color-animation {
+  animation       : pulse 1s infinite;
+  background-color: #ffcb00;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #fde37e;
+  }
+
+  50% {
+    background-color: #fde37e;
+  }
+
+  100% {
+    background-color: #ffcb00;
+  }
+}
+
+@media (max-width: 769px) {
+
+  #searchform .has-text-left {
+    margin-left: 0;
+  }
+
+  #searchform .form-container {
+    flex-direction: column;
+  }
+
+  #searchform .search-dir-button {
+    width     : 100% !important;
+    margin-top: 10px;
+  }
+
+  #companies-search input[type="text"] {
+    width    : 100% !important;
+    max-width: 100%;
+  }
+
+  #companies-search #zipcode {
+    width: 100% !important;
+  }
+
+  #companies-search .form-field {
+    margin: 7px 0;
+    width : 100%;
+  }
+
+  #companies-search .form-field select {
+    width    : 100% !important;
+    font-size: 13px;
+    display  : block;
+  }
+
+  #companies-search label {
+    font-size: 13px;
+    top      : 0px;
+  }
+
+  .search-style-3 #searchform .fields-container {
+    background: transparent;
+    margin    : 0;
+  }
+}
+
+.jbd-container .bookmark-container .bookmark-icon {
+  display  : inline-block;
+  position : relative;
+  font-size: 26px;
+  top      : 2px;
+  cursor   : pointer;
+}

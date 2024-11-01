@@ -1,0 +1,200 @@
+#category-holder ul.main-categories {
+	width: 100%;
+}
+
+.main-categories [class^="la la-"] {}
+
+.main-categories .la.la-menu-arrow {
+	float: right;
+	line-height: 19px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.main-categories .active> a >.la.la-menu-arrow::before {
+	content: "\f110";
+}
+
+.main-categories .la.la-menu-arrow::before {
+	content: "\f111";
+}
+
+/* Slide Image */
+
+.business-categories-slider .categories-slider-item .categories-slide-image {
+	margin: 0 auto;
+	width: 111px;
+	height: 111px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	border: 1px solid #dfdfdf;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Slide Title */
+
+.business-categories-slider .categories-slider-item p {
+	color: #333;
+	font-size: 13px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.main-categories-simple {
+	display: flex;
+	text-align: center;
+	width: 100%;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.main-categories-simple a {
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 2px;
+	color: #ffff;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: end;
+	font-size: 0.875rem;
+	margin-right: 1px;
+	max-width: 80px;
+	padding: 15px 6px 14px;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex: 0 1 80px;
+	-ms-flex: 0 1 80px;
+	flex: 0 1 80px;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+.main-categories-simple a:hover {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.main-categories-simple a i {
+	font-size: 27px;
+}
+
+.main-categories-simple a span {
+	color: #ffffff;
+	line-height: 14px;
+}
+
+.main-categories-simple .cta-text {
+	display: none;
+}
+
+/*---------------slider 2 ----------------*/
+
+.ctg-slider-wrapper .slick-list {
+	padding-top: 3rem;
+	width: 180%;
+}
+
+.ctg-slider-wrapper .slick-arrow {
+	position: absolute;
+	top: -2.2rem;
+	cursor: pointer;
+	width: 2.3rem;
+	height: 2.3rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	border: 2px solid #000;
+	border-radius: 0.5rem;
+	z-index: 3;
+}
+
+.ctg-slider-wrapper .slick-slider .controller-prev i, .ctg-slider-wrapper .slick-slider .controller-next i {
+	background: none;
+	color:rgba(0, 0, 0, 0.8);
+	display: inline-block;
+	margin-top: 0px;
+	position: relative;
+	font-size: 20px;
+	width: 35px;
+	height: 35px;
+	line-height: initial;
+	padding: 7px;
+}
+
+.ctg-slider-wrapper .slick-slider .controller-prev i:hover, .ctg-slider-wrapper .slick-slider .controller-next i:hover {
+    background: #000;
+    color: #fff;
+}
+
+.ctg-slider-wrapper .controller-prev {
+	right: 4.5rem;
+}
+
+.ctg-slider-wrapper .controller-next {
+	right: 1.8rem;
+}
+
+.ctg-slider-wrapper .slick-slide{
+	width: 19rem;
+}
+
+.ctg-slider-wrapper .ctg-slider-item {
+	padding: 0 1rem;
+	display: block;
+	color: #1E2E42;
+}
+
+.ctg-slider-wrapper .ctg-slider-img-wrap {
+	background-repeat: no-repeat; 
+	background-position: center center; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+	
+	overflow: hidden;
+	border-radius: 0.5rem;
+	width: 100%;
+	height: 20rem;
+	position: relative;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	top: 0;
+}
+
+.ctg-slider-wrapper .ctg-slider-img-wrap:hover {
+	-webkit-box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.8);
+	top: -0.3rem;
+}
+
+.ctg-slider-wrapper .ctg-slider-img-wrap img{
+	widht: 100%;
+}
+
+.ctg-slider-wrapper .ctg-slider-item-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}

@@ -1,0 +1,353 @@
+<form>
+        <fieldset name="basic" addfieldpath="/models/fields">
+                
+                <field
+                        name="mItemId"
+                        type="text"
+                        label="Menu item id"
+                        description="The id of the menu item associated with view all button" />
+
+		<field
+                        name="viewtype"
+                        type="radio"
+                        class="btn-group"
+                        default="default"
+                        label="View type"
+                        description="Choose the module layout">
+                        
+                        <option value="default">Simple</option>
+                        <option value="simple_2">Simple 2</option>
+                        <option value="discount">Discount</option>
+                        <option value="slider">Slider</option>
+                        <option value="list">List</option>
+                </field>
+
+		<field
+                        name="order"
+                        type="radio"
+                        class="btn-group"
+                        default="0"
+                        label="Ordering"
+                        description="Set ordering for displaying latest offers">
+                    <option
+                            value="3">Alphabetical</option>
+                    <option
+                            value="2">ID</option>
+                    <option
+                            value="1">Creation date</option>
+                    <option
+                            value="0">Random</option>
+                </field>
+				
+                <field name="layout-type" type="list" default="horizontal" label="Layout type" 
+                        description="How will module will be displayed, horizontal or vertical">
+                        <option 
+                                value="horizontal">horizontal</option>
+                        <option 
+                                value="vertical">vertical</option>
+                </field>
+				
+                <field
+                                name="phoneGridOption"
+                                type="phonegridoptions"
+                                multiple="false"
+                                size="10"
+                                default="col-12"
+                                label="Mobile Layout"
+                                description="Select Mobile Layout" >
+                </field>
+
+                <field
+                                name="tabletGridOption"
+                                type="tabletgridoptions"
+                                multiple="false"
+                                size="10"
+                                default="col-md-6"
+                                label="Tablet Layout"
+                                description="Select Tablet Layout" >
+                </field>
+
+                <field
+                                name="desktopGridOption"
+                                type="desktopgridoptions"
+                                multiple="false"
+                                size="10"
+                                default="col-lg-4"
+                                label="Desktop Layout"
+                                description="Select Desktop Layout" >
+                </field>
+
+                <field
+                        name="packages"
+                        type="businesspackages"
+                        multiple="true"
+                        size="10"
+                        default=""
+                        label="Packages"
+                        description="Select package"/>
+                                                        
+                <field
+                        name="count"
+                        type="text"
+                        default="5"
+                        label="Number of offers"
+                        description="Number of offers that will be displayed" />
+
+                <field name="itemType" type="radio" default="1" label="Select item type"  description="" class="btn-group btn-group-yesno">
+                        <option value="1">Offers</option>
+                        <!-- option value="2">Products</option-->
+                </field>
+
+                <field
+                        name="categoryIds"
+                        type="businesscategories"
+                        multiple="true"
+                        size="10"
+                        default=""
+                        category_type="2"
+                        label="Categories"
+                        description="Select categories" >
+                </field>
+
+                <field
+                                name="type"
+                                type="offertypes"
+                                multiple="false"
+                                size="10"
+                                default=""
+                                label="Type"
+                                description="Select type">
+                </field>
+
+                <field
+                        name="citySearch"
+                        type="businesscities"
+                        multiple="false"
+                        size="10"
+                        default=""
+                        label="City"
+                        description="Select city" >
+                </field>	
+                
+                <field
+                        name="regionSearch"
+                        type="text"
+                        label="Region"
+                        description="Enter the name of the region" />
+
+                <field
+                                name="showLocation"
+                                type="radio"
+                                class="btn-group btn-group-yesno"
+                                default="0"
+                                label="Show location"
+                                description="Show location of offer">
+                        <option
+                                        value="1">JYES</option>
+                        <option
+                                        value="0">JNO</option>
+                </field>
+
+                <field
+                        name="geo_location"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        default="0"
+                        label="Offers geo location"
+                        description="Display businesses based on offers geo location - this will do a refresh of the page and the coordinates will be added on current URL">
+                    <option
+                            value="1">JYES</option>
+                    <option
+                            value="0">JNO</option>
+                </field>
+
+                <field
+                        name="radius"
+                        type="text"
+                        default="100"
+                        label="Geo location radius"
+                        description="Show offers based on radius"/>
+						
+                <field
+                        name="category_link"
+                        type="radio"
+                        class="btn-group"
+                        default="0"
+                        label="Link with offer category"
+                        description="Show related offers. Display the offers that are relevant to the current offer category.">
+                        <option
+                                value="1">JYES</option>
+                        <option
+                                value="0">JNO</option>
+                </field>
+
+                <field
+                        name="only_featured"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        default="0"
+                        label="Only featured"
+                        description="Show only featurd businesses">
+                        <option
+                                value="1">JYES</option>
+                        <option
+                                value="0">JNO</option>
+                </field>
+
+                <field
+                                name="showlistingName"
+                                type="radio"
+                                class="btn-group btn-group-yesno"
+                                default="0"
+                                label="Show listing name"
+                                description="Show listing name on offer">
+                        <option
+                                        value="1">JYES</option>
+                        <option
+                                        value="0">JNO</option>
+                </field>
+
+                <field
+                                name="showOfferFree"
+                                type="radio"
+                                class="btn-group btn-group-yesno"
+                                default="1"
+                                label="Show Offer Free Text"
+                                description="Show Free text of offers that are free">
+                        <option
+                                        value="1">JYES</option>
+                        <option
+                                        value="0">JNO</option>
+                </field>
+
+                <field
+                        name="showviewall"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        default="0"
+                        label="Show view all"
+                        description="Display view all link at the bottom">
+                        <option
+                                value="1">JYES</option>
+                        <option
+                                value="0">JNO</option>
+                        </field>
+
+                <field
+                        name="showcountryflag"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        default="0"
+                        label="Show Country Flag"
+                        description="Display country flag (only on simple 2 for now)">
+                        <option
+                                value="1">JYES</option>
+                        <option
+                                value="0">JNO</option>
+                </field>
+
+                <field
+                        name="restrictaccess"
+                        type="radio"
+                        class="btn-group btn-group-yesno"
+                        default="0"
+                        label="Restrict access"
+                        description="Restrict access for offers based on packages (full functionailty available only for simple 2 layout) ">
+                        <option
+                                value="1">JYES</option>
+                        <option
+                                value="0">JNO</option>
+                </field>
+
+                <field
+                        name="backgroundColor"
+                        type="text"
+                        default="#EAEAEA"
+                        label="Item background color"
+                        description="The background color of latest offer" />
+
+                <field
+                        name="borderColor"
+                        type="text"
+                        default="#AAAAAA"
+                        label="Item border color"
+                        description="The background color of border of latest offer" />
+        </fieldset>
+
+        <fieldset name="slider" label="Slider view options">
+        <field
+        name="nrVisibleItems"
+        type="text"
+        default="4"
+        label="Visible items"
+        description="Number of offers that will be visible at one time" />
+
+        <field
+        name="nrItemsToScrool"
+        type="text"
+        default="1"
+        label="Number of items to scrool"
+        description="Number of offers that will be scrolled" />
+
+        <field
+        name="autoplay"
+        type="radio"
+        class="btn-group"
+        default="0"
+        label="Autoplay"
+        description="Automatic scroll">
+        <option
+                value="1">JYES</option>
+        <option
+                value="0">JNO</option>
+        </field>
+
+        <field
+        name="autoplaySpeed"
+        type="text"
+        default="2000"
+        label="Autoplay Speed"
+        description="Speed of the autoplay" />
+        </fieldset>
+         <fieldset
+                    name="advanced">
+
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                        name="cache"
+                        type="list"
+                        default="1"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                            value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                            value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                        name="cache_time"
+                        type="text"
+                        default="900"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                <field
+                        name="cachemode"
+                        type="hidden"
+                        default="static">
+                    <option
+                            value="static"></option>
+                </field>
+            </fieldset>
+</form>

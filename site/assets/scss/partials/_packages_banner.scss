@@ -1,0 +1,52 @@
+#packages-banner-container {
+    background-color: #30404f; 
+    border-radius: 2px; 
+    position: relative;
+
+    .text-area {
+      position:absolute; 
+      top: 15%; 
+      left: 5%; 
+      color: white;
+      max-width: 40%; 
+      text-align: center;     
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    #packages-banner-container {
+      .title {
+      font-size: 3.2vw;
+    }
+      .content {
+        font-size: 2.8vw;
+      }
+  }
+  }
+  
+ 
+  
+  @media screen and (min-width: 576px) and (max-width: 1140px) {
+    #packages-banner-container  {
+      .title {
+        font-size: 2vw;
+      }
+      .content {
+        font-size: 1.6vw;
+      }
+    }
+  }
+  
+  
+  
+  @media screen and (min-width: 1140px) {
+    #packages-banner-container  {
+      .title {
+        font-size: 30px;
+      }
+      .content {
+        font-size: 22px;
+      }
+    }
+  }

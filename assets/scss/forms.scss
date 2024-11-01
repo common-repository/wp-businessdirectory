@@ -1,0 +1,261 @@
+$red:#FF0000;
+$white:#FFF;
+
+@mixin marginPaddingImportant{
+    margin: 0!important;
+    padding: 0!important;
+}
+
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+}
+
+fieldset.boxed {
+    width: 100%;
+    position: relative;
+    background-color: $white;
+    border: 1px solid #EFEFEF;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px -5px rgba(0, 0, 0, .75);
+
+    &:first-child{
+        margin-top: 0;
+    }
+
+    .package {
+        background:#ededea;
+        width: 100%;
+    }
+
+    p{
+        margin: 10px 0 20px;
+    }
+}
+
+.item-package-details{
+    width: 100%;
+}
+
+form div.description, p.hint {
+    clear: both;
+    font-size: 11px;
+    color: #8f9199;
+}
+
+.autocomplete-box{
+    padding: 15px;
+    background-color: #cfcfcf;
+}
+
+.clear {
+    clear: both;
+}
+
+#repeat-container {
+    line-height: 25px;
+
+    ul{
+        margin: 0;
+    }
+
+    label{
+        float: none;
+        display: inline-block !important;
+    }
+}
+
+.description-counter{
+    text-align: right;
+    margin-top: 5px;
+
+    label{
+        display: inline;
+        font-weight: normal;
+    }
+}
+
+#descriptionCounterShort, .description-counter input{
+    display: inline!important;
+    float: none;
+    padding: 0 4px;
+    width: 50px !important;
+}
+
+.picture-table{
+    width: 100%;
+}
+
+.picture-preview-settings {
+    background-color: #EAEAEA;
+    box-shadow: 0 2px 5px #969696;
+    padding: 2px;
+    float: left;
+}
+
+#cover-picture-preview img{
+    width: 100%;
+}
+
+#picture-preview img{
+@include marginPaddingImportant;
+    /*width: 100px;*/
+}
+
+#ad-picture-preview img{
+    @include marginPaddingImportant;
+    width: 200px;
+}
+
+.services img{
+    @include marginPaddingImportant;
+    /*width: 100px;*/
+}
+
+.category-image-preview{
+    float: right;
+    margin-left: 15px;
+}
+
+.validation-error{
+    border: 1px solid $red;
+    background-color: $red;
+    color: $white;
+    padding: 20px 30px;
+
+    .la{
+        color: $white;
+    }
+}
+
+.iconpicker .la{
+    color: #555 !important;
+}
+
+
+/*---steps-----*/
+
+.process-steps {
+    .process-step{
+        float: left;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .step-number{
+        font-size: 17px;
+        color: $white;
+        text-shadow: 1px 1px $white, -1px -1px #444;
+        padding: 0px 0 0 10px;
+    }
+    .active-step{
+        margin-right: 0px;
+    }
+    .step-divider{
+        float: left;
+        font-size: 25px;
+        margin: 0 3px;
+    }
+    .steps-info{
+        float: right;
+        line-height: 30px;
+    }
+}
+
+.edit-container{
+    clear: both;
+}
+
+.process-tabs{
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 9px -5px rgba(0, 0, 0, .75);
+
+    .process-tab{
+        border-right: 1px solid rgb(206, 206, 206);
+        cursor: pointer;
+
+        &:first-child{
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        &:last-child{
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-right: 0;
+        }
+    }
+}
+
+#process-tabs {
+    .process-tab {
+        @include flexCenter;
+        justify-content: center;
+        min-height: 60px;
+        position: relative;
+        margin: 0;
+        color: #74777b;
+        background-color: $white;
+        transition: all ease .3s;
+        cursor: pointer;
+
+        .tab-active{
+            cursor: pointer;
+
+            .la{
+                color: $white;
+            }
+
+            &:hover{
+                background-color: #17B797;
+                color: $white;
+
+                .la{
+                    color: $white;
+                }
+            }
+        }
+        i {
+            opacity: 0.7;
+            transition: all ease .3s;
+        }
+        span {
+            font-size: 14px;
+            margin-left: 5px;
+        }
+    }
+
+    .process-tab-content{
+        @include flexCenter;
+    }
+
+    .active {
+        color: $white;
+        background-color: #18BC9C;
+        border-left: 0;
+        border-right: 0;
+    }
+}
+
+.jbd-container{
+	.minicolors, .minicolors-focus{
+		z-index: 1;
+	}
+}
+
+@media screen and (max-width: 767px) {
+    #process-tabs .process-tab {
+        min-width: auto;
+
+        i {
+            padding: 10px;
+        }
+
+        span {
+            display: none;
+        }
+    }
+}
+
+

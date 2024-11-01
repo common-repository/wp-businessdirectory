@@ -1,0 +1,276 @@
+<form>
+	<fieldset name="basic" addfieldpath="/models/fields">
+		<field
+			name="title"
+			type="text"
+			label="Title"
+			description="Title of module" />
+
+		<field
+			name="description"
+			type="textarea"
+			label="Description"
+			description="Description of module" />
+							
+		<field
+			name="mItemId"
+			type="text"
+			label="Menu item id"
+			description="The id of the menu item associated with search" />
+			
+		<field name="layout-type" type="list" default="horizontal" label="Layout type" 
+			description="How will module will be displayed, horizontal or vertical">
+				<option value="horizontal">horizontal</option>
+					<option value="vertical">vertical</option>
+		</field>
+			
+		<field
+			name="bg-color"
+			type="color" 
+			default=""
+			label="Background color"
+			description="The background color or the search module" />
+			
+		<field
+				name="maxOffers"
+				type="text"
+				default="250"
+				label="Max offers"
+				description="Number of maximum offers to be displayed on the module map" />
+		<field
+				name="minLetters"
+				type="text"
+				default="3"
+				label="Min nr. of Letters"
+				description="Minimum number of letters required for the search. (If 0, no restriction will be applied)" />
+
+		<field
+				name="customAttributes"
+				type="customattributes"
+				multiple="true"
+				size="10"
+				default=""
+				attributetype="2"
+				label="Custom attributes"
+				description="Select the custom attributes you want to appear on search criterias" >
+		</field>
+		
+		<field name="radius" type="list" default="0" label="Search filter distance" 
+			description="Set the filter disance from zip code location. Only business listings contained in the specified area will be displayed">
+					<option value="0">All</option>
+					<option value="10">10</option>
+					<option value="25">25</option>
+					<option value="50">50</option>
+		</field>
+
+		<field name="showMap" type="radio" default="0" label="Show map"  description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+						
+		<field name="showOnlyMap" type="radio" default="0" label="Show Only Map" class="btn-group btn-group-yesno" description="Hide the rest of the module and display only the map">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field
+				name="mapHeight"
+				type="text"
+				default="450px"
+				label="Map height"
+				description="Height of the map" />
+		<field
+				name="mapWidth"
+				type="text"
+				default="100%"
+				label="Map width"
+				description="Width of the map" />
+
+		<field name="showKeyword" type="radio" default="1" label="Show keyword" class="btn-group btn-group-yesno" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryKeyword" type="radio" default="0" label="Mandatory keyword" class="btn-group btn-group-yesno" description="Make keyword completion mandatory">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="enableKeywordSuggestion" type="radio" default="1" label="Enable keyword suggestion" description="Enable suggestion while searching on keyword" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showCategories" type="radio" default="1" label="Show categories" class="btn-group btn-group-yesno"  description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryCategories" type="radio" default="0" label="Mandatory categories"  class="btn-group btn-group-yesno" description="Make categories selection mandatory">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field
+				name="availableCategories"
+				type="businesscategories"
+				multiple="true"
+				size="10"
+				category_type = "2"
+				default=""
+				label="Available Categories"
+				description="Restrict Select categories">
+		</field>
+						
+		<field name="showSubCategories" type="radio" default="1" label="Show subcategories" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="showTypes" type="radio" default="1" label="Show types" class="btn-group btn-group-yesno" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="mandatoryTypes" type="radio" default="0" label="Mandatory types" class="btn-group btn-group-yesno" description="Make type selection mandatory">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showCities" type="radio" default="1" label="Show cities" class="btn-group btn-group-yesno" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryCities" type="radio" default="0" label="Mandatory cities" class="btn-group btn-group-yesno" description="Make cities selection mandatory">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showRegions" type="radio" default="0" label="Show regions" class="btn-group btn-group-yesno" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryRegions" type="radio" default="0" label="Mandatory regions" class="btn-group btn-group-yesno" description="Make countries selection mandatory">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="showCountries" type="radio" default="0" label="Show countries" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="mandatoryCountries" type="radio" default="0" label="Mandatory countries" description="Make countries selection mandatory" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="showProvince" type="radio" default="1" label="Show province" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="mandatoryProvince" type="radio" default="0" label="Mandatory province" description="Make province selection mandatory" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+						
+		<field name="showZipcode" type="radio" default="1" label="Show Zipcode" class="btn-group btn-group-yesno" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryZipCode" type="radio" default="0" label="Mandatory zip code" description="Make zip code mandatory" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="enableAutosuggestion" type="radio" default="1" label="Enable Autosuggestion" class="btn-group btn-group-yesno" description="Enables the location autosuggestion">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="showLocationPopup" type="radio" default="1" label="Show Location Popup" description="Enable/disable the location popup with radius and geolocation section on the search module" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="linklocation" type="radio" default="0" label="Enable link location" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="showMinPrice" type="radio" default="0" label="Show min price" description="Show the minimum price" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="showMaxPrice" type="radio" default="0" label="Show max price" description="Show the maximum price" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field
+			name="max-price"
+			type="text"
+			default="1000"
+			label="Maximum price"
+			description="The maximum price that will appear on price slider" />
+
+		<field name="showBookmark" type="radio" default="0" label="Show bookmark" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="itemType" type="radio" default="1" label="Select item type"  description="" class="btn-group btn-group-yesno">
+			<option value="1">Offers</option>
+			<!-- >option value="2">Products</option-->
+		</field>
+
+		<field name="overlayEffect" type="radio" default="0" label="Overlay effect"  description="Enable the overlay effect on the search module fields" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="autocomplete" type="radio" default="0" label="Enable autocomplete" class="btn-group btn-group-yesno" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="preserve" type="radio" default="1" label="Preserve search values" class="btn-group btn-group-yesno" description="Preserve search values that have been entered by the offer_search">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+	</fieldset>
+				
+	<fieldset name="advanced">
+
+		<field
+			name="moduleclass_sfx"
+			type="text"
+			label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+			description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+		<field
+			name="cache"
+			type="list"
+			default="1"
+			label="COM_MODULES_FIELD_CACHING_LABEL"
+			description="COM_MODULES_FIELD_CACHING_DESC">
+			<option
+				value="1">JGLOBAL_USE_GLOBAL</option>
+			<option
+				value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+		</field>
+
+		<field
+			name="cache_time"
+			type="text"
+			default="900"
+			label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+			description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+	</fieldset>
+</form>

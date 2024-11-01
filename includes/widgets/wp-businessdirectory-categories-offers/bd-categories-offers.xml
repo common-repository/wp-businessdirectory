@@ -1,0 +1,111 @@
+<form>
+        <fieldset name="basic" addfieldpath="/models/fields">
+                <field
+                                name="viewtype"
+                                type="radio"
+                                class="btn-group"
+                                default="menu"
+                                label="View type"
+                                description="Choose the module layout">
+                        <option
+                                        value="menu">Menu</option>
+                        <option
+                                        value="slider">Slider</option>
+                        <option
+                                        value="accordion">Accordion</option>
+                        <option
+                                        value="grid_icons">Grid Icons</option>
+                        <option
+                                        value="grid">Grid</option>
+                        <option
+                                        value="boxes">Boxes</option>
+                </field>
+
+                <field
+                                name="phoneGridOption"
+                                type="phonegridoptions"
+                                multiple="false"
+                                default="col-12"
+                                label="Mobile Layout"
+                                description="Select Mobile Layout" >
+                </field>
+
+                <field
+                                name="tabletGridOption"
+                                type="tabletgridoptions"
+                                multiple="false"
+                                default="col-md-3"
+                                label="Tablet Layout"
+                                description="Select Tablet Layout" >
+                </field>
+
+                <field
+                                name="desktopGridOption"
+                                type="desktopgridoptions"
+                                multiple="false"
+                                default="col-lg-4"
+                                label="Desktop Layout"
+                                description="Select Desktop Layout" >
+                </field>
+
+                <field
+                                name="categoryIds"
+                                type="businesscategories"
+                                multiple="true"
+			        size="6"
+                                default="0"
+                                label="Offer Categories"
+                                category_type="2"
+                                description="Select Offer categories">
+                </field>
+
+                <field
+                                name="showviewall"
+                                type="radio"
+                                class="btn-group"
+                                default="0"
+                                label="Show view all"
+                                description="Display view all link at the bottom">
+                        <option
+                                        value="1">JYES</option>
+                        <option
+                                        value="0">JNO</option>
+                </field>
+        </fieldset>
+
+        <fieldset name="slider" label="Slider view options">
+                <field
+                                name="nrVisibleItems"
+                                type="text"
+                                default="4"
+                                label="Visible items"
+                                description="Number of business that will be visible at one time" />
+
+                <field
+                                name="nrItemsToScrool"
+                                type="text"
+                                default="1"
+                                label="Number of items to scrool"
+                                description="Number of businesses that will be scrooled" />
+
+                <field
+                                name="autoplay"
+                                type="radio"
+                                class="btn-group"
+                                default="0"
+                                label="Autoplay"
+                                description="Automatic scroll">
+                        <option
+                                        value="1">JYES</option>
+                        <option
+                                        value="0">JNO</option>
+                </field>
+
+                <field
+                                name="autoplaySpeed"
+                                type="text"
+                                default="2000"
+                                label="Autoplay Speed"
+                                description="Speef of the autoplay" />
+        </fieldset>
+</form>

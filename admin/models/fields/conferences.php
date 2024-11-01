@@ -1,0 +1,58 @@
+<?php
+/**
+ * @package    J-BusinessDirectory
+ *
+ * @author     CMSJunkie http://www.cmsjunkie.com/
+ * @copyright  Copyright (C) 2007 - 2022 CMSJunkie. All rights reserved.
+ * @license    https://www.gnu.org/licenses/agpl-3.0.en.html
+ */
+defined('_JEXEC') or die('Restricted access');
+
+
+jimport('joomla.form.helper');
+JFormHelper::loadFieldClass('list');
+
+class JFormFieldConferences extends JFormFieldList {
+	protected $type = 'conferences';
+    protected $layout = 'joomla.form.field.list-fancy-select';
+
+	// getLabel() left out
+
+	/**
+	 * Method to get the custom field options.
+	 * Use the query attribute to supply a query to generate the list.
+	 *
+	 * @return  array  The field option objects.
+	 *
+	 * @since   11.1
+	 */
+	protected function getOptions() {
+		$options = array();
+		$options[] = JHtml::_('select.option', "", "Select conference");
+			
+		// Initialize some field attributes.
+		$key = "id";
+		$value = "name";
+		$translate = $this->element['translate'] ? (string) $this->element['translate'] : false;
+		$query = ' SELECT id, name FROM #__jbusinessdirectory_conferences where published =1 order by name asc';
+	
+		// Get the database object.
+		$db = JFactory::getDBO();
+	
+		// Set the query and get the result list.
+		$db->setQuery($query);
+		$items = $db->loadObjectlist();
+	
+		// Build the field options.
+		if (!empty($items)) {
+			foreach ($items as $item) {
+				$options[] = JHtml::_('select.option', $item->id, $item->name);
+			}
+		}
+	
+		// Merge any additional options in the XML definition.
+		$options = array_merge(parent::getOptions(), $options);
+	
+		return $options;
+	}
+}

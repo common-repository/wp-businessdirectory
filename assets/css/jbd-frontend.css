@@ -1,0 +1,59 @@
+.jbd-container .pagination {
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%; }
+  .jbd-container .pagination .limit {
+    display: flex;
+    flex-direction: column; }
+    .jbd-container .pagination .limit .inputbox {
+      margin-top: 5px; }
+  .jbd-container .pagination form {
+    width: 100%; }
+  .jbd-container .pagination .pagination > * {
+    padding: 0 5px; }
+  .jbd-container .pagination .pagination-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex; }
+    .jbd-container .pagination .pagination-list li {
+      width: 35px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      transition: all ease 0.2s; }
+      .jbd-container .pagination .pagination-list li:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; }
+      .jbd-container .pagination .pagination-list li:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px; }
+    .jbd-container .pagination .pagination-list > *:hover:not(.disabled) {
+      cursor: pointer;
+      border: 1px solid #18BC9C;
+      background-color: #fff; }
+.jbd-container .form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0; }
+
+.jbd-message-container {
+  align-items: center;
+  background: #fff;
+  padding: 0px 16px;
+  text-align: center;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  height: 67vh; }
+  .jbd-message-container .message-content {
+    text-align: center; }
+  .jbd-message-container .message-image {
+    width: 350px;
+    display: inline; }

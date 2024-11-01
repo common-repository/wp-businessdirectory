@@ -1,0 +1,352 @@
+<form>
+	<fieldset name="basic" addfieldpath="/models/fields">
+		<field
+			name="title"
+			type="text"
+			label="Title"
+			description="Title of module" />
+	
+		<field
+			name="description"
+			type="textarea"
+			label="Description"
+			description="Description of module" />
+			
+		<field name="base-layout" type="list" default="standard" label="Base Layout" 
+			description="Base layout">
+				<option value="default">standard</option>
+				<option value="default_style_2">Style 2</option>
+		</field>
+		
+		<field name="layout-type" type="list" default="horizontal" label="Layout type" 
+				description="How will module will be displayed, horizontal or vertical">
+				<option value="horizontal">horizontal</option>
+					<option value="vertical">vertical</option>
+		</field>
+		
+		<field
+			name="mItemId"
+			type="text"
+			label="Menu item id"
+			description="The id of the menu item associated with search" />
+		
+		<field name="useDynamicFormAction" type="radio" default="0" label="Dynamic form action"  description="Builds the form submission URL based on the searched fields" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field
+			name="bg-color"
+			type="color" 
+			default=""
+			label="Background color"
+			description="The background color or the search module" />
+			
+		<field
+			name="customAttributes"
+			type="customattributes"
+			multiple="true"
+			size="6"
+			default=""
+			attributetype="1"
+			attributeSearch="1"
+			label="Custom attributes"
+			description="Select the custom attributes you want to appear on search criterias" >
+		</field>
+		
+		<field name="radius" type="list" default="50" label="Radius" 
+			description="Set the filter disance from zip code location. Only business listings contained in the specified area will be displayed">
+					<option value="0">Not set</option>
+					<option value="10">10</option>
+					<option value="25">25</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+					<option value="200">200</option>
+					<option value="300">300</option>
+		</field>
+		
+		<field
+			name="max-radius"
+			type="text"
+			default="300"
+			label="Maximum radius"
+			description="The maximum radius that will appear on slider" />
+
+		<field name="showMap" type="radio" default="0" label="Show map"  description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="setAutoFocus" type="radio" default="0" label="Set auto focus"  description="Set the focus of the page automatically to the keyword search field" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="overlayEffect" type="radio" default="1" label="Overlay effect"  description="Enable the overlay effect on the search module fields" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	
+		<field
+			name="mapHeight"
+			type="text"
+			default="450px"
+			label="Map height"
+			description="Height of the map" />
+		<field
+			name="mapWidth"
+			type="text"
+			default="100%"
+			label="Map width"
+			description="Width of the map" />
+		<field
+			name="maxListings"
+			type="text"
+			default="250"
+			label="Max listings"
+			description="Number of maximum listings to be displayed on the module map" />
+		<field
+			name="minLetters"
+			type="text"
+			default="0"
+			label="Min nr. of Letters"
+			description="Minimum number of letters required for the search. (If 0, no restriction will be applied)" />
+
+		<field name="fieldLabel" type="radio" default="1" label="Field Label" class="btn-group btn-group-yesno" description="The field label can be an icon or text">
+			<option value="1">Icon</option>
+			<option value="2">Text</option>
+		</field>
+
+		<field name="showOnlyMap" type="radio" default="0" label="Show Only Map" class="btn-group btn-group-yesno" description="Hide the rest of the module and display only the map">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="enableAutosuggestion" type="radio" default="1" label="Enable Autosuggestion" class="btn-group btn-group-yesno" description="Enables the location autosuggestion">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="showKeyword" type="radio" default="1" label="Show keyword" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryKeyword" type="radio" default="0" label="Mandatory keyword" description="Make keyword completion mandatory" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="enableKeywordSuggestion" type="radio" default="1" label="Enable keyword suggestion" description="Enable suggestion while searching on keyword" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="showCategories" type="radio" default="1" label="Show categories" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryCategories" type="radio" default="0" label="Mandatory categories" description="Make categories selection mandatory" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showSubCategories" type="radio" default="1" label="Show subcategories" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="separateCategories" type="radio" default="0" label="Separate categories" description="Separate categories and subcategories on different select boxes" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field
+				name="availableCategories"
+				type="businesscategories"
+				multiple="true"
+				size="6"
+				default=""
+				label="Available Categories"
+				description="Restrict Select categories">
+		</field>
+
+		<field name="showCategoriesSuggestion" type="radio" default="0" label="Show category suggestion" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field
+				name="suggestedCategories"
+				type="businesscategories"
+				multiple="true"
+				size="6"
+				default=""
+				label="Sugested Categories"
+				description="Select the suggested categories">
+		</field>
+		
+		<field name="showTypes" type="radio" default="1" label="Show types" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryTypes" type="radio" default="0" label="Mandatory types" description="Make type selection mandatory" class="btn-group btn-group-yesno"> 
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field
+			name="availableTypes"
+			type="businesstypes"
+			multiple="true"
+			size="6"
+			default=""
+			label="Available Types"
+			description="Restrict Select type">
+		</field>
+		
+		<field name="showCities" type="radio" default="1" label="Show cities" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryCities" type="radio" default="0" label="Mandatory cities" description="Make cities selection mandatory" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showRegions" type="radio" default="0" label="Show regions" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryRegions" type="radio" default="0" label="Mandatory regions" description="Make region selection mandatory" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showCountries" type="radio" default="0" label="Show countries" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryCountries" type="radio" default="0" label="Mandatory countries" description="Make countries selection mandatory" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showZipcode" type="radio" default="1" label="Show Zipcode" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryZipCode" type="radio" default="0" label="Mandatory zip code" description="Make zip code mandatory" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="enableLocationSuggestion" type="radio" default="0" label="Enable location suggestions" description="Enable location suggestions" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="showLocationPopup" type="radio" default="1" label="Show Location Popup" description="Enable/disable the location popup with radius and geolocation section on the search module" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="mandatoryLocationSuggestion" type="radio" default="0" label="Mandatory location autosuggestions" description="Make the location suggestions mandatory for selection" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<!--field name="showNearbyLocationPopup" type="radio" default="0" label="Show Nearby Popup" description="Enable/disable the location popup with nearby cities" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field-->
+
+		<field
+			name="defaultLocationName"
+			type="text"
+			label="Default location name"
+			description="Location name that will be shown on front-end" />
+
+		<field
+			name="defaultLatitude"
+			type="text"
+			label="Default latitude"
+			description="Latitude coordinates" />
+
+		<field
+			name="defaultLongitude"
+			type="text"
+			label="Default longitude"
+			description="Location name that will be shown on front-end" />
+
+		<field name="showProvince" type="radio" default="0" label="Show province" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="mandatoryProvince" type="radio" default="0" label="Mandatory province" description="Make province selection mandatory" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="showBookmark" type="radio" default="0" label="Show bookmark" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="autocomplete" type="radio" default="0" label="Enable autocomplete" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="autolocation" type="radio" default="0" label="Enable autolocation" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="linklocation" type="radio" default="0" label="Enable link location" description="" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="preserve" type="radio" default="1" label="Preserve search values" description="Preserve search values that have been entered by the listings_search" class="btn-group btn-group-yesno">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+	</fieldset>
+				
+	<fieldset name="advanced">
+
+		<field
+			name="moduleclass_sfx"
+			type="text"
+			label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+			description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+		<field
+			name="cache"
+			type="list"
+			default="1"
+			label="COM_MODULES_FIELD_CACHING_LABEL"
+			description="COM_MODULES_FIELD_CACHING_DESC">
+			<option
+				value="1">JGLOBAL_USE_GLOBAL</option>
+			<option
+				value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+		</field>
+
+		<field
+			name="cache_time"
+			type="text"
+			default="900"
+			label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+			description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+	</fieldset>
+</form>

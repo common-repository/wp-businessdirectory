@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field
+                name="search"
+                type="text"
+                label="COM_JBD_FILTER_SEARCH_LABEL"
+                description="COM_JBD_FILTER_SEARCH_DESC"
+                hint="JSEARCH_FILTER"
+        />
+
+        <field
+                name="category_id"
+                type="businesscategories"
+                label=""
+                description=""
+                onchange="this.form.submit();"
+        />
+
+        <input type="hidden" name="form_submited" value="1"/>
+    </fields>
+
+    <fields name="list">
+        <field
+                name="fullordering"
+                type="list"
+                label="COM_CONTENT_LIST_FULL_ORDERING"
+                description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+                onchange="this.form.submit();"
+                default="rq.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="rq.id ASC">JGRID_HEADING_ID_ASC</option>
+            <option value="rq.id DESC">JGRID_HEADING_ID_DESC</option>
+            <option value="listings_contacted ASC">JGLOBAL_LISTINGS_CONTACTED_ASC</option>
+            <option value="listings_contacted DESC">JGLOBAL_LISTINGS_CONTACTED_DESC</option>
+            <option value="rq.status ASC">JGRID_STATUS_ASC</option>
+            <option value="rq.status DESC">JGRID_STATUS_DESC</option>
+            <option value="replies ASC">JGRID_REPLIES_ASC</option>
+            <option value="replies DESC">JGRID_REPLIES_DESC</option>
+        </field>
+
+        <field
+                name="limit"
+                type="limitbox"
+                label="COM_CONTENT_LIST_LIMIT"
+                description="COM_CONTENT_LIST_LIMIT_DESC"
+                class="input-mini"
+                default="25"
+                onchange="this.form.submit();"
+        />
+    </fields>
+</form>

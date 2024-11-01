@@ -1,0 +1,170 @@
+@mixin bordered($color,$width){
+  border:$width solid $color;
+}
+
+@mixin borderedLeft($color, $width) {
+  border-left: $width solid $color;
+}
+
+@mixin borderedRight($color, $width) {
+  border-right: $width solid $color;
+}
+
+@mixin borderedBottom($color, $width) {
+  border-bottom: $width solid $color;
+}
+
+@mixin borderedTop($color, $width) {
+  border-top: $width solid $color;
+}
+
+@mixin textPos($textAlign,$lineHeight) {
+  text-align: $textAlign;
+  line-height: $lineHeight;
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin responsive-simple-td{
+  border: none;
+  position: relative;
+  white-space: normal;
+  text-align:left;
+}
+
+@mixin responsive-simple-has-title{
+  padding-left: 50%;
+  padding-top: 5px;
+}
+
+@mixin responsive-simple-td-before{
+  width: 45%;
+  padding-right: 10px;
+  white-space: nowrap;
+  text-align:left;
+  font-weight: bold;
+}
+
+@mixin responsive-thead-tr{
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+@mixin floatWidth{
+  float: none;
+  width: 100%;
+}
+
+@mixin horizontal-list{
+  width: 100%;
+  border-left: none;
+  padding-left: 0;
+}
+
+/*------------colors---------*/
+@import 'partials/colors';
+
+/*------------- general -------------*/
+@import 'partials/general';
+/*------------- end general -------------*/
+
+/*-----------common------*/
+@import  'partials/common';
+/*-----------end common------*/
+
+
+/*-----------categories------*/
+@import  'partials/categories';
+/*-----------end categories------*/
+
+/**-------------- forms --------------**/
+@import "partials/forms";
+/**-------------- end forms --------------**/
+
+/**-------------- tabs --------------**/
+@import "partials/tabs";
+/**-------------- end tabs --------------**/
+
+/**-------------- tabs --------------**/
+@import "partials/loader";
+/**-------------- end tabs --------------**/
+
+/*--------------- control panel-----------*/
+@import 'partials/controll-panel';
+/*--------------- end control panel-----------*/
+
+/*------------- listing list -------------*/
+@import 'partials/listings_list';
+/*------------- end listing list -------------*/
+
+/*------------- business listing details ---------------*/
+@import 'partials/listing_details';
+/*------------- end business listing details ---------------*/
+
+/*---------event details----------*/
+@import 'partials/event_details';
+/*---------end event details----------*/
+
+/*---------event list----------*/
+@import 'partials/events_list';
+/*---------end event list----------*/
+
+/*---------offer list----------*/
+@import 'partials/offers_list';
+/*---------end offer list----------*/
+
+/*---------offer details----------*/
+@import 'partials/offer_details';
+/*---------end offer details----------*/
+
+/**-------------- Package Upgrade Section --------------**/
+@import "partials/package_upgrade";
+/**-------------- End Package Upgrade Section--------------**/
+
+/**-------------- Admin Campaign Section --------------**/
+@import "partials/admin_campaigns";
+/**-------------- End Admin Upgrade Section--------------**/
+
+/**-------------- Messages Section --------------**/
+@import "partials/admin_messages";
+/**-------------- End Messages Section--------------**/
+
+/**-------------- Quote Request Section --------------**/
+@import "partials/quote_request";
+/**-------------- End Quote Request Section --------------**/
+
+/**-------------- Quote Messages Section --------------**/
+@import "partials/quote_messages";
+/**-------------- End Quote Messages Section --------------**/
+
+/**-------------- Responsive Section --------------**/
+@import "partials/responsive";
+/**-------------- End Responsive Section --------------**/
+
+/**-------------- Statistics Section --------------**/
+@import "partials/admin_statistics";
+/**-------------- Statistics Section --------------**/
+
+/*-----------circle------*/
+@import  'partials/circle';
+/*-----------end circle------*/
+
+/**-------------- Review Scorecard --------------**/
+@import "partials/review_scorecard";
+/**-------------- Review Scorecard --------------**/
+
+/**-------------- Packages Banner --------------**/
+@import "partials/packages_banner";
+/**-------------- Packages Banner --------------**/
+
+/**-------------- Videos List View --------------**/
+@import "partials/videos_list";
+/**-------------- Videos List View --------------**/
+

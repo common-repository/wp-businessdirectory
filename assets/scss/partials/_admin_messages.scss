@@ -1,0 +1,20 @@
+.jbd-container{
+	
+	.unread-message{
+	    font-weight: 700;
+	    background-color: rgba(215, 230, 230, 0.8);
+	    cursor: pointer;
+	}
+	
+	.read-message{
+	    cursor: pointer;
+	}
+	
+	//.messages-table tbody tr:hover{
+	//    box-shadow: 0px 4px 0px 0px rgba(33,33,33,.2);
+	//}
+	
+	.message-text{
+	    margin-top: 20px;
+	}
+}

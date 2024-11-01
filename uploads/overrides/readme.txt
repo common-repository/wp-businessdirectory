@@ -1,0 +1,1 @@
+You can override all WPBusinessDirectory veiws by creating a folder with the view name and then include the template files (default.php)

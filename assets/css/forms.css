@@ -1,0 +1,179 @@
+fieldset.boxed {
+  width: 100%;
+  position: relative;
+  background-color: #FFF;
+  border: 1px solid #EFEFEF;
+  padding: 20px 25px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 9px -5px rgba(0, 0, 0, 0.75); }
+  fieldset.boxed:first-child {
+    margin-top: 0; }
+  fieldset.boxed .package {
+    background: #ededea;
+    width: 100%; }
+  fieldset.boxed p {
+    margin: 10px 0 20px; }
+
+.item-package-details {
+  width: 100%; }
+
+form div.description, p.hint {
+  clear: both;
+  font-size: 11px;
+  color: #8f9199; }
+
+.autocomplete-box {
+  padding: 15px;
+  background-color: #cfcfcf; }
+
+.clear {
+  clear: both; }
+
+#repeat-container {
+  line-height: 25px; }
+  #repeat-container ul {
+    margin: 0; }
+  #repeat-container label {
+    float: none;
+    display: inline-block !important; }
+
+.description-counter {
+  text-align: right;
+  margin-top: 5px; }
+  .description-counter label {
+    display: inline;
+    font-weight: normal; }
+
+#descriptionCounterShort, .description-counter input {
+  display: inline !important;
+  float: none;
+  padding: 0 4px;
+  width: 50px !important; }
+
+.picture-table {
+  width: 100%; }
+
+.picture-preview-settings {
+  background-color: #EAEAEA;
+  box-shadow: 0 2px 5px #969696;
+  padding: 2px;
+  float: left; }
+
+#cover-picture-preview img {
+  width: 100%; }
+
+#picture-preview img {
+  margin: 0 !important;
+  padding: 0 !important;
+  /*width: 100px;*/ }
+
+#ad-picture-preview img {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 200px; }
+
+.services img {
+  margin: 0 !important;
+  padding: 0 !important;
+  /*width: 100px;*/ }
+
+.category-image-preview {
+  float: right;
+  margin-left: 15px; }
+
+.validation-error {
+  border: 1px solid #FF0000;
+  background-color: #FF0000;
+  color: #FFF;
+  padding: 20px 30px; }
+  .validation-error .la {
+    color: #FFF; }
+
+.iconpicker .la {
+  color: #555 !important; }
+
+/*---steps-----*/
+.process-steps .process-step {
+  float: left;
+  line-height: 30px;
+  margin-bottom: 10px; }
+.process-steps .step-number {
+  font-size: 17px;
+  color: #FFF;
+  text-shadow: 1px 1px #FFF, -1px -1px #444;
+  padding: 0px 0 0 10px; }
+.process-steps .active-step {
+  margin-right: 0px; }
+.process-steps .step-divider {
+  float: left;
+  font-size: 25px;
+  margin: 0 3px; }
+.process-steps .steps-info {
+  float: right;
+  line-height: 30px; }
+
+.edit-container {
+  clear: both; }
+
+.process-tabs {
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 9px -5px rgba(0, 0, 0, 0.75); }
+  .process-tabs .process-tab {
+    border-right: 1px solid #cecece;
+    cursor: pointer; }
+    .process-tabs .process-tab:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
+    .process-tabs .process-tab:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-right: 0; }
+
+#process-tabs .process-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  position: relative;
+  margin: 0;
+  color: #74777b;
+  background-color: #FFF;
+  transition: all ease .3s;
+  cursor: pointer; }
+  #process-tabs .process-tab .tab-active {
+    cursor: pointer; }
+    #process-tabs .process-tab .tab-active .la {
+      color: #FFF; }
+    #process-tabs .process-tab .tab-active:hover {
+      background-color: #17B797;
+      color: #FFF; }
+      #process-tabs .process-tab .tab-active:hover .la {
+        color: #FFF; }
+  #process-tabs .process-tab i {
+    opacity: 0.7;
+    transition: all ease .3s; }
+  #process-tabs .process-tab span {
+    font-size: 14px;
+    margin-left: 5px; }
+#process-tabs .process-tab-content {
+  display: flex;
+  align-items: center; }
+#process-tabs .active {
+  color: #FFF;
+  background-color: #18BC9C;
+  border-left: 0;
+  border-right: 0; }
+
+.jbd-container .minicolors, .jbd-container .minicolors-focus {
+  z-index: 1; }
+
+@media screen and (max-width: 767px) {
+  #process-tabs .process-tab {
+    min-width: auto; }
+    #process-tabs .process-tab i {
+      padding: 10px; }
+    #process-tabs .process-tab span {
+      display: none; } }
+
+/*# sourceMappingURL=forms.css.map */

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field
+                name="search"
+                type="text"
+                label="COM_JBD_FILTER_SEARCH_LABEL"
+                description="COM_JBD_FILTER_SEARCH_DESC"
+                hint="JSEARCH_FILTER"
+        />
+
+		<field
+                name="event_id"
+                type="events"
+                label=""
+                description=""
+                onchange="this.form.submit();"
+        />
+
+        <field
+                name="status"
+                type="list"
+                label=""
+                description=""
+                onchange="this.form.submit();"
+        >
+            <option value="">LNG_JOPTION_SELECT_STATE</option>
+            <option value="0">LNG_UNCONFIRMED</option>
+            <option value="1">LNG_CONFIRMED</option>
+            <option value="2">LNG_CANCELED</option>
+        </field>
+
+        <field
+                name="start_date"
+                type="calendar"
+                label="From"
+                hint="From"
+                format="%Y-%m-%d"
+                size="10"
+                filter="start_date"
+                class="form-control calendar-date"
+                onchange="this.form.submit();"
+        />
+
+        <field
+                name="end_date"
+                type="calendar"
+                label="To"
+                hint="To"
+                format="%Y-%m-%d"
+                size="10"
+                filter="end_date"
+                class="form-control calendar-date"
+                onchange="this.form.submit();"
+        />
+
+        <input type="hidden" name="form_submited" value="1"/>
+    </fields>
+
+    <fields name="list">
+
+        <field
+                name="fullordering"
+                type="list"
+                label="COM_CONTENT_LIST_FULL_ORDERING"
+                description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+                onchange="this.form.submit();"
+                default="ep.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="ep.id ASC">JGRID_HEADING_ID_ASC</option>
+            <option value="ep.id DESC">JGRID_HEADING_ID_DESC</option>
+        </field>
+
+        <field
+                name="limit"
+                type="limitbox"
+                label="COM_CONTENT_LIST_LIMIT"
+                description="COM_CONTENT_LIST_LIMIT_DESC"
+                class="input-mini"
+                default="25"
+                onchange="this.form.submit();"
+        />
+    </fields>
+</form>

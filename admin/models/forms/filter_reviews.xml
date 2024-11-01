@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field
+                name="search"
+                type="text"
+                label="COM_JBD_FILTER_SEARCH_LABEL"
+                description="COM_JBD_FILTER_SEARCH_DESC"
+                hint="JSEARCH_FILTER"
+        />
+
+        <field
+                name="state_id"
+                type="list"
+                label=""
+                description=""
+                onchange="this.form.submit();"
+        >
+            <option value="">LNG_JOPTION_SELECT_STATE</option>
+            <option value="1">LNG_ACTIVE</option>
+            <option value="0">LNG_INACTIVE</option>
+        </field>
+
+        <field
+                name="status_id"
+                type="list"
+                label=""
+                description=""
+                onchange="this.form.submit();"
+        >
+            <option value="">LNG_JOPTION_SELECT_STATUS</option>
+            <option value="0">LNG_NEEDS_CREATION_APPROVAL</option>
+            <option value="1">LNG_DISAPPROVED</option>
+            <option value="2">LNG_APPROVED</option>
+        </field>
+
+        <field
+                name="type_id"
+                type="list"
+                label=""
+                description=""
+                onchange="this.form.submit();"
+        >
+            <option value="">LNG_JOPTION_SELECT_TYPE</option>
+            <option value="1">LNG_BUSINESS_LISTINGS</option>
+            <option value="2">LNG_OFFER</option>
+        </field>
+
+        <input type="hidden" name="form_submited" value="1"/>
+    </fields>
+
+    <fields name="list">
+
+        <field
+                name="fullordering"
+                type="list"
+                label="COM_CONTENT_LIST_FULL_ORDERING"
+                description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+                onchange="this.form.submit();"
+                default="a.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="cr.name ASC">JGLOBAL_TITLE_ASC</option>
+            <option value="cr.name DESC">JGLOBAL_TITLE_DESC</option>
+            <option value="cr.subject ASC">JSUBJECT_ASC</option>
+            <option value="cr.subject DESC">JSUBJECT_DESC</option>
+            <option value="cr.id ASC">JGRID_HEADING_ID_ASC</option>
+            <option value="cr.id DESC">JGRID_HEADING_ID_DESC</option>
+        </field>
+
+        <field
+                name="limit"
+                type="limitbox"
+                label="COM_CONTENT_LIST_LIMIT"
+                description="COM_CONTENT_LIST_LIMIT_DESC"
+                class="input-mini"
+                default="25"
+                onchange="this.form.submit();"
+        />
+    </fields>
+</form>

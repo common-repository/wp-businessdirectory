@@ -1,0 +1,268 @@
+@mixin marginWidth{
+    margin: 0;
+    width:100%;
+}
+
+@mixin floatLeft{
+    float: left;
+    text-align: left;
+}
+
+.jbd-container{
+
+	#offers {
+	    clear: both;
+	}
+	    
+	#offer-list-view li{
+	    padding:0;
+	    list-style:none;
+	    background:$jbd-White;
+	    margin-bottom: 10px;
+	}
+	    
+	#tab-panel .offers-container{
+	    @include marginWidth;
+	    float: left;
+	}
+	    
+	.offers-container.full {
+	    @include marginWidth;
+	}
+	    
+	#company-tab-content{
+	    .offers-container{
+	        @include marginWidth;
+	    }
+	
+	    .offer-box {
+	        width: 160px;
+	    }
+	}
+	    
+	.offer-list{
+	    margin: 0!important;
+	    padding: 0!important;
+	    list-style: none!important;
+	
+	    .offer-image img{
+	        width: 100%;
+	    }
+	}
+	    
+	.offer-box {
+	    @include floatLeft;
+	    width: 165px;
+	    font-size: 13px;
+	    padding: 10px;
+	
+	    .offer-price {
+	        float: right;
+	    }
+	}
+	    
+	.offer-dates{
+	    font-size: 13px;
+	    color: #000;
+	}
+	    
+	#offer-map{
+	    margin-bottom: 30px;
+	}
+	
+	.offer-categories{
+	    margin: 15px 0;
+	    font-size: 13px;
+	}
+	    
+	.offer-attachments{
+	    margin: 15px 0;
+	
+	    a{
+	        margin: 5px 5px 5px 0;
+	        background: #EFEFEF;
+	        padding: 3px 10px;
+	        display: inline-block;
+	    }
+	}
+	
+	.offer-img-container {
+	    border: 1px solid    $jbd-Grey;
+	    padding: 1px;
+	    width: 96px;
+	    line-height: 0px;
+	}
+	    
+	.offer-image {
+	    line-height: 1px;
+	
+	    img {
+	        vertical-align: middle;
+	    }
+	}
+	    
+	.offer-discount {
+	    background-color: #82B33A;
+	    clear: both;
+	    color: $jbd-White;
+	    font: {
+	        size: 12px;
+	        weight: bold;
+	    }
+	    @include textPos(center,22px);
+	    width: 100px;
+	}
+	    
+	.offer-subject {
+	    font-size: 15px;
+	    padding-bottom: 8px;
+	    padding-top: 5px;
+	    
+	}
+	
+	.offer-price {
+	    font: {
+	        weight: bold;
+	        size: 13px;
+	    }
+	    padding: 2px;
+	}
+	    
+	.price-text-list {
+	    float: right;
+	    max-width: 100%;
+	}
+	    
+	.offer-price.old, .offer-price .old-price {
+	    text-decoration: line-through;
+	       font-weight: normal;
+	}
+	    
+	#offers .categories-menu {
+	    position: relative;
+	    float: left;
+	    width: 220px;
+	    height: 320px;
+	}
+	    
+	.image-preview-cnt {
+	    border: 1px solid $jbd-Grey;
+	    padding: 2px;
+	    width: 100%;
+	    text-align: center;
+	    margin-bottom: 5px;
+	
+	    a {
+	        line-height: 210px;
+	    }
+	
+	    img {
+	        vertical-align: middle;
+	        width: 100%;
+	    }
+	}
+	    
+	.left {
+	    @include floatLeft;
+	}
+	    
+	.image-prv-cnt {
+	    margin-right: 3px;
+	}
+	    
+	.image-prv {
+	    border: 1px solid black !important;
+	    height: 42px;
+	    width: 42px;
+	}
+	    
+	#offer-detail-1{
+	    padding: 20px;
+	    background-color: $jbd-White;
+	}
+	    
+	.offer-image-container {
+	    float: left;
+	    width: 330px;
+	}
+	    
+	.offer-content {
+	    float: left;
+	}
+	    
+	.offer-options {
+	    display: block;
+	    clear: both;
+	}
+	    
+	.offer-details {
+	    margin-bottom: 20px;
+	
+	    .price-old{
+	        text-decoration: line-through;
+	    }
+	
+	    table{
+	        margin-bottom: 10px;
+	    }
+	
+	    th {
+	        padding-right: 3px;
+	        text-align: left;
+	    }
+	
+	    td {
+	        padding: 3px;
+	        line-height: 20px;
+	    }
+	}
+	    
+	.offer-description {
+	    padding: 20px 0 10px 0;
+	    clear: left;
+	}
+	    
+	.link-item{
+	    min-width: 85px;
+	    line-height: 36px;
+	}
+
+
+	.offer-list-style-2{
+
+	}
+
+	$cartBtnColor: #66c37b;
+
+	.cart-btn-list {
+		background-color: $cartBtnColor;
+		padding: 5px;
+		text-align: center;
+		font-size: 15px;
+		font-weight: initial;
+		cursor: pointer;
+		transition: 0.8s;
+		border: 0.5px solid $cartBtnColor;
+
+		&:hover {
+			border: 0.5px solid $cartBtnColor;
+			background-color: white;
+			transition: 0.8s;
+
+			a {
+				i {
+					color: $cartBtnColor;
+				}
+			}
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+
+			i {
+				font-size: 25px;
+			}
+		}
+	}
+}    

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field
+                name="search"
+                type="text"
+                label="COM_JBD_FILTER_SEARCH_LABEL"
+                description="COM_JBD_FILTER_SEARCH_DESC"
+                hint="JSEARCH_FILTER"
+        />
+
+        <input type="hidden" name="form_submited" value="1"/>
+    </fields>
+
+    <fields name="list">
+        <field
+                name="fullordering"
+                type="list"
+                label="COM_CONTENT_LIST_FULL_ORDERING"
+                description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+                onchange="this.form.submit();"
+                default="ofc.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="ofc.id ASC">JGRID_HEADING_ID_ASC</option>
+            <option value="ofc.id DESC">JGRID_HEADING_ID_DESC</option>
+            <option value="ofc.code ASC">JGRID_COUPON_ASC</option>
+            <option value="ofc.code DESC">JGRID_COUPON_DESC</option>
+            <option value="o.subject ASC">JGRID_OFFER_ASC</option>
+            <option value="o.subject DESC">JGRID_OFFER_DESC</option>
+            <option value="co.name ASC">JGLOBAL_BUSINESS_ASC</option>
+            <option value="co.name DESC">JGLOBAL_BUSINESS_DESC</option>
+            <option value="ofc.generated_time ASC">JGRID_GENERATED_ON_ASC</option>
+            <option value="ofc.generated_time DESC">JGRID_GENERATED_ON_DESC</option>
+            <option value="o.endDate ASC">JGRID_EXPIRE_ON_ASC</option>
+            <option value="o.endDate DESC">JGRID_EXPIRE_ON_DESC</option>
+        </field>
+
+        <field
+                name="limit"
+                type="limitbox"
+                label="COM_CONTENT_LIST_LIMIT"
+                description="COM_CONTENT_LIST_LIMIT_DESC"
+                class="input-mini"
+                default="25"
+                onchange="this.form.submit();"
+        />
+    </fields>
+</form>

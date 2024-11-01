@@ -1,0 +1,83 @@
+<form>
+        <fieldset name="basic" addfieldpath="/models/fields">
+        <field name="mItemId" type="text" label="Menu item id" description="The id of the menu item associated with view all button" />
+        <field name="viewtype" type="radio" class="btn-group" default="default" label="View type" description="Choose the module layout">
+                <option value="default">Default</option>
+                <option value="simple">Simple</option>
+                <option value="simple_2">Simple 2</option>
+                <option value="slider">Slider</option>
+                <option value="list">List</option>
+        </field>
+        <field name="order" type="radio" class="btn-group" default="0" label="Ordering" description="Set ordering for displaying latest events">
+                <option value="4">Chronological</option>
+                <option value="3">Alphabetical</option>
+                <option value="2">ID</option>
+                <option value="1">Creation date</option>
+                <option value="0">Random</option>
+        </field>
+        <field name="layout-type" type="list" default="horizontal" label="Layout type" description="How will module will be displayed, horizontal or vertical">
+                <option value="horizontal">horizontal</option>
+                <option value="vertical">vertical</option>
+        </field>
+        <field name="phoneGridOption" type="phonegridoptions" multiple="false" default="col-12" label="Mobile Layout" description="Select Mobile Layout"></field>
+        <field name="tabletGridOption" type="tabletgridoptions" multiple="false" default="col-md-6" label="Tablet Layout" description="Select Tablet Layout"></field>
+        <field name="desktopGridOption" type="desktopgridoptions" multiple="false" default="col-lg-4" label="Desktop Layout" description="Select Desktop Layout"></field>
+        <field
+                                name="packages"
+                                type="businesspackages"
+                                multiple="true"
+			        size="6"
+                                default=""
+                                label="Packages"
+                                description="Select package"/>
+        <field name="count" type="text" default="8" label="Number of events" description="Number of events that will be displayed" />
+        <field name="categoryIds" type="businesscategories" multiple="true" size="6" default="" label="Categories" category_type="3" description="Select categories"></field>
+        <field name="type" type="eventypes" multiple="false" default="" label="Type" description="Select type"></field>
+        <field name="city" type="businesscities" multiple="false" default="" label="City" description="Select city"></field>
+        <field name="region" type="businessregions" multiple="false" default="" label="Region" description="Select Region"></field>
+        <field name="showLocation" type="radio" class="btn-group btn-group-yesno" default="0" label="Show location" description="Show location of offer">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+        </field>
+        <field name="geo_location" type="radio" class="btn-group btn-group-yesno" default="0" label="Events geo location" description="Display businesses based on events geo location - this will do a refresh of the page and the coordinates will be added on current URL">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+        </field>
+        <field name="radius" type="text" default="100" label="Geo location radius" description="Show events based on radius" />
+        <field
+                                name="event_link"
+                                type="radio"
+                                class="btn-group"
+                                default="0"
+                                label="Link with event view"
+                                description="Link with event category. Display related events that have the same category. Used to display related items.">
+                <option
+                                        value="1">JYES</option>
+                <option
+                                        value="0">JNO</option>
+        </field>
+        <field name="only_featured" type="radio" class="btn-group btn-group-yesno" default="0" label="Only featured" description="Show only featured events">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+        </field>
+        <field name="showlistingName" type="radio" class="btn-group btn-group-yesno" default="0" label="Show listing name" description="Show listing name on offer">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+        </field>
+        <field name="showviewall" type="radio" class="btn-group btn-group-yesno" default="0" label="Show view all" description="Display view all link at the bottom">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+        </field>
+        <field name="backgroundColor" type="text" default="#EAEAEA" label="Item background color" description="The background color of latest event" />
+        <field name="borderColor" type="text" default="#AAAAAA" label="Item border color" description="The background color of border of latest event" />
+        </fieldset>
+        <fieldset name="slider" label="Slider view options">
+        <field name="nrVisibleItems" type="text" default="4" label="Visible items" description="Number of events that will be visible at one time" />
+        <field name="nrItemsToScrool" type="text" default="1" label="Number of items to scrool" description="Number of events that will be scrooled" />
+        <field name="autoplay" type="radio" class="btn-group" default="0" label="Autoplay" description="Automatic scroll">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+        </field>
+        <field name="autoplaySpeed" type="text" default="2000" label="Autoplay Speed" description="Speef of the autoplay" />
+        </fieldset>
+</form>

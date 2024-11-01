@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_J_BUSINESSDIRECTORY_MENUITEM_CATEGORIES">
+		<message>COM_J_BUSINESSDIRECTORY_MENUITEM_CATEGORIES</message>
+	</layout>
+
+	<fields name="request">
+		<fieldset name="request">
+			<field name="categoryType" type="radio" class="btn-group" default="1" label="Category Type" description="Choose which types of category will be loaded when menu item is accessed">
+				<option value="1">Business Listings</option>
+				<option value="2">Offer</option>
+				<option value="3">Event</option>
+			</field>
+
+			<field
+					name="menuCategoryId"
+					type="text"
+					default=""
+					label="Category id"
+					description="Enter the category id which you want to show, this will ignore the Category type"/>
+					
+			<field
+					name="view_style"
+					type="list"
+					class="btn-group"
+					default=""
+					label="View style"
+					description="Set the view style for the categories display">
+					<option
+						value="">Select style</option>
+					<option
+						value="1">Style 1</option>
+					<option
+						value="2">Style 2</option>
+					<option
+						value="3">Style 3</option>
+					<option
+						value="4">Style 4</option>
+					<option
+						value="5">Style 5</option>
+				</field>
+		</fieldset>
+	</fields>
+</metadata>

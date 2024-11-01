@@ -1,0 +1,50 @@
+.jbd-container .js-stools-btn-filter {
+  line-height: 28px;
+}
+.jbd-container .js-stools-btn-clear {
+  line-height: 30px;
+}
+.jbd-container .js-stools-container-bar .custom-select {
+  height: calc(1.5em + 1.2rem);
+}
+.jbd-container #settings-search {
+  margin: 5px 0;
+}
+.jbd-container.jdb-dashboard a:not(.la)::before, .jbd-container a.jtable-btn::before, .jbd-container .user-manual-section a::before {
+  display: none;
+}
+
+#toolbar .btn.btn-small i {
+  padding: 0 1.5rem 0 0;
+}
+
+/* Payment processor input fields */
+#column_value input, #column_name input {
+  height: calc(1.5em + 1.2rem);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  border: 2px solid #dee2e6;
+  border-radius: 3px;
+}
+
+#column_value input:focus, #column_name input:focus {
+  outline: none;
+  border: 2px solid #c1c1c2;
+}
+
+#jdb-wrapper {
+  background: #eff4fb !important;
+}
+
+.navbar-default {
+  background-color: #fff !important;
+}
+
+#jdb-wrapper.tmpl-style-1 .nav > li a {
+  text-decoration: none !important;
+}
+
+/*# sourceMappingURL=jbd-style_v4.css.map */

@@ -1,0 +1,30 @@
+.jbd-container{
+    img {
+	    max-width: 100%;
+	}
+}
+
+.jbd-message-container{
+    align-items: center;
+    background: #fff;
+    padding: 0px 16px;
+    text-align: center;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    height: 67vh;
+    
+    .message-content{
+        text-align: center;
+    }
+    
+    .message-image {
+        width: 350px;
+        display: inline;
+    }
+    
+}
+
+

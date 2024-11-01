@@ -1,0 +1,134 @@
+
+.jbd-container{
+    #user-options{
+        .ibox h4{
+            margin: 5px 0;
+        }
+        .ibox:hover{
+            cursor: pointer;
+
+            .ibox-title{
+                background-color: #FAFAFA;
+            }
+        }
+
+        .ibox-title h5{
+            display: inline;
+            float:none;
+        }
+    }
+
+
+	li.option-button{
+	    h3 {
+	        font-size: 15px;
+	        margin: 0!important;
+	        padding: 30px 0 5px;
+	        line-height: 18px;
+	    }
+	
+	    p {
+	        font-size: 13px;
+	        margin: 0;
+	        padding: 0 5px;
+	        line-height: 20px;
+	    }
+	
+	    span {
+	        margin: 0;
+	    }
+	
+	    .box-inset{
+	        img{
+	            height: 65px!important;
+	        }
+	        .search h3{
+	            padding: 5px 0;
+	        }
+	    }
+	    .btn {
+	        padding: 7px 12px;
+	        margin-top: 5px;
+	    }
+	}
+
+	#billing-overview {
+
+		.billing-item{
+			margin-bottom: 30px;
+		}
+
+		.item-name{
+			font-size: 16px;
+			font-weight: 600;
+		}
+
+		.billing-orders{
+			.jitem-section{
+				display: flex;
+				flex-grow: 1;
+				
+				.btn:last-child{
+					margin-left: 5px;
+				}
+			}
+		}
+
+		.jitem-title{
+			font-size: 14px;
+		}
+
+		.more-orders{
+			display:none;
+		}
+
+		.show-more{
+			margin-top: 10px;
+			cursor: pointer;
+			font-size: 14px;
+		}
+
+		.show-more-ordes{
+			display: block;
+		}
+
+		.show-less-ordes{
+			display: none;
+		}
+
+		.billing-item.open{
+			.more-orders{
+				display: flex;
+			}
+			
+			.show-more-ordes{
+				display: none;
+			}
+	
+			.show-less-ordes{
+				display: block;
+			}
+		}
+
+	}
+	.alert-warning {
+		color: #fff!important; 
+	}
+}
+/*-----------Responsive Media----------------*/
+
+@media (max-width: 576px) {
+
+    /* ------control panel --------- */
+    #jdb-wrapper {
+        #page-wrapper {
+            margin: 0 !important;
+        }
+
+        #content-wrapper {
+            margin: 20px 0 !important;
+        }
+    }
+}
+
+/*-----------Responsive Media----------------*/

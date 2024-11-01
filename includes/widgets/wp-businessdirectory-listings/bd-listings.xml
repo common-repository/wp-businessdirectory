@@ -1,0 +1,392 @@
+<form>
+	<fieldset name="basic" addfieldpath="/models/fields">
+		<field
+			name="mItemId"
+			type="text"
+			label="Menu item id"
+			description="The id of the menu item associated with view all button" />
+		<field
+			name="viewtype"
+			type="radio"
+			class="btn-group"
+			default="simple"
+			label="View type"
+			description="Choose the module layout">
+			<option
+				value="simple">Simple 1</option>
+				<option
+				value="simple_2">Simple 2</option>
+			<option
+				value="simple_3">Simple 3</option>
+			<option
+				value="slider">Slider</option>
+			<option
+				value="slider_2">Slider 2</option>
+			<!--option
+				value="tier">Tier</option>
+			<option
+				value="tier_type">Tier Type</option -->
+			<option
+				value="list">List</option>
+			<option
+				value="list2">List 2</option>
+			
+		</field>
+		<field
+			name="order"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Ordering"
+			description="Set ordering for diplaying business listings">
+			<option
+				value="4">Review Score</option>
+			<option
+				value="3">Alphabetical</option>
+			<option
+				value="2">ID</option>
+			<option
+				value="1">Creation date</option>
+			<option
+				value="0">Random</option>
+		</field>
+		<field name="layout-type" type="list" default="horizontal" label="Layout type" 
+			description="How will module will be displayed, horizontal or vertical">
+			<option 
+				value="horizontal">horizontal</option>
+			<option 
+				value="vertical">vertical</option>
+		</field>
+		<field
+			name="phoneGridOption"
+			type="phonegridoptions"
+			multiple="false"
+			default="col-12"
+			label="Mobile Layout"
+			description="Select Mobile Layout" >
+		</field>
+		<field
+			name="tabletGridOption"
+			type="tabletgridoptions"
+			multiple="false"
+			default="col-md-6"
+			label="Tablet Layout"
+			description="Select Tablet Layout" >
+		</field>
+		<field
+			name="desktopGridOption"
+			type="desktopgridoptions"
+			multiple="false"
+			default="col-lg-4"
+			label="Desktop Layout"
+			description="Select Desktop Layout" >
+		</field>
+		<field
+			name="truncate_title"
+			type="text"
+			default=""
+			label="Title characters"
+			description="Set the number of characters for the title"/>
+		<field
+			name="packages"
+			type="businesspackages"
+			multiple="true"
+			size="6"
+			default=""
+			label="Packages"
+			description="Select package"/>
+		<field
+			name="count"
+			type="text"
+			default="8"
+			label="Number of businesses"
+			description="Number of businesses that will be displayed"/>
+		<field
+			name="categoryIds"
+			type="businesscategories"
+			multiple="true"
+			size="6"
+			default=""
+			label="Categories"
+			category_type="1"
+			description="Select categories">
+		</field>
+		<field
+			name="customAttributes"
+			type="customattributes"
+			multiple="true"
+			size="6"
+			default=""
+			attributetype="1"
+			attributeSearch="1"
+			label="Custom attributes displayed"
+			description="Select the custom attributes you want to be displayed on the module - only for style simple 2" >
+		</field>
+		<field
+			name="type"
+			type="businesstypes"
+			multiple="false"
+			default=""
+			label="Type"
+			description="Select type">
+		</field>
+		<field
+			name="city"
+			type="businesscities"
+			multiple="false"
+			default=""
+			label="City"
+			description="Select city">
+		</field>
+		<field
+			name="region"
+			type="businessregions"
+			multiple="false"
+			default=""
+			label="Region"
+			description="Select Region">
+		</field>
+		<field
+			name="country"
+			type="businesscountries"
+			multiple="false"
+			default=""
+			label="Country"
+			description="Select country" >
+		</field>
+		<field
+			name="membership"
+			type="businessmemberships"
+			multiple="false"
+			default=""
+			label="Memberships"
+			description="Select membership" >
+		</field>
+		<field
+			name="link_target"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="Link target"
+			description="Set item link target">
+			<option
+				value="1">Listing page</option>
+			<option
+				value="2">Client website</option>
+		</field>
+		<field
+			name="listing_link"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Link with listing view"
+			description="Link with listing category. Display related listings that have the same category. Used to display related items.">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+		<field
+			name="video_link"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Link with video"
+			description="Link with video category. Display the listings that are relevant to video category.">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+		<field
+			name="country_link"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Link with country"
+			description="Display items from the country selection from the country module.">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+		<field
+			name="nearby"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Enable nearby listings"
+			description="Enable or disable nearby listings">
+			<option
+					value="1">JYES</option>
+			<option
+					value="0">JNO</option>
+		</field>
+		<field
+			name="plan"
+			type="campaignplans"
+			multiple="false"
+			default=""
+			label="Campaign Position"
+			description="Select position"
+			class="campaign-app"
+		>
+		</field>
+		<field
+			name="only_campaign"
+			type="radio"
+			class="btn-group campaign-app"
+			default="0"
+			label="Only Campaigns"
+			description="Show only campaign businesses">
+			<option
+					value="1">JYES</option>
+			<option
+					value="0">JNO</option>
+		</field>
+		<field
+			name="only_featured"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Only featured"
+			description="Show only featured businesses">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+		<field
+			name="only_with_logo"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Only with logo"
+			description="Show only items with logo">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+			<field
+			name="show_recently_viewed"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Show recently viewed"
+			description="Diplay only recently viewed listings. Other conditions are applied too.">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+		<field
+			name="geo_location"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Listings geo location"
+			description="Display businesses based on listings geo location - this will do a refresh of the page and the coordinates will be added on current URL">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+		<field
+			name="radius"
+			type="text"
+			default="100"
+			label="Geo location radius"
+			description="Show the business listing based on radius"/>
+		<field
+			name="showviewall"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Show view all"
+			description="Display view all link at the bottom">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+		<field
+			name="backgroundColor"
+			type="text"
+			default=""
+			label="Item background color"
+			description="The background color of business listings item" />
+		<field
+			name="borderColor"
+			type="text"
+			default=""
+			label="Item border color"
+			description="The background color of border of business listings item" />
+	</fieldset>
+	<fieldset name="slider" label="Slider view options">
+		<field
+			name="nrVisibleItems"
+			type="text"
+			default="4"
+			label="Visible items"
+			description="Number of business that will be visible at one time" />
+		<field
+			name="nrItemsToScrool"
+			type="text"
+			default="1"
+			label="Number of items to scrool"
+			description="Number of businesses that will be scrooled" />
+		<field
+			name="autoplay"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Autoplay"
+			description="Automatic scroll">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+		<field
+			name="autoplaySpeed"
+			type="text"
+			default="2000"
+			label="Autoplay Speed"
+			description="Speef of the autoplay" />
+	</fieldset>
+	<fieldset name="tier" label="Tier view options">
+		<field
+			name="max-numbers-row"
+			type="text"
+			default="5"
+			label="Max number of businesses per row"
+			description="Maximum number of businesses that will be displayed in a row (Tire View)" />
+		<field
+			name="image_size"
+			type="radio"
+			class="btn-group"
+			default="2"
+			label="Image Size"
+			description="Set the image size for the tier views">
+			<option
+					value="3">Normal</option>
+			<option
+					value="2">Medium</option>
+			<option
+					value="1">Small</option>
+		</field>
+		<field
+			name="show-header"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Show header"
+			description="Show header for each row">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>

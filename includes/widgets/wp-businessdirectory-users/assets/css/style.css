@@ -1,0 +1,396 @@
+.jbd-mod-user {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.jbd-mod-user .user-area {
+    text-align: right;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.jbd-mod-user .user-area i {
+    font-size: 16px;
+    padding-right: 7px;
+}
+
+.jbd-mod-user .user-area a {
+    text-decoration: none;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    line-height: 24px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.jbd-mod-user .user-area a:hover {
+    opacity: 1;
+}
+
+.jbd-mod-user .user-area span {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.jbd-mod-user .jbd-view-cart {
+    position: relative;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.jbd-mod-user .jbd-view-cart i {
+    position: relative;
+}
+
+.jbd-mod-user .jbd-button-container {
+    position: relative;
+    margin-left: 20px;
+}
+
+.jbd-mod-user .jbd-button-container .button-create {
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.jbd-mod-user .jbd-button-container .button-create:hover {
+    color: #333;
+}
+
+.jbd-mod-user .jbd-button-container .button-create i {
+    margin-right: 7px;
+}
+
+#jbd-user-login .social-network-wrapper {
+    margin: 24px 0 10px;
+    padding-top: 20px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.jbd-mod-user .jbd-username i {
+    background: #fff;
+    padding: 4px 6px;
+    border-radius: 50%;
+    color: #888;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 7px;
+}
+
+.social-login-button {
+    margin: 20px 0;
+    line-height: 40px;
+    width: 100%;
+}
+
+.social-login-button .social-btn {
+    color: white !important;
+    display: flex;
+    line-height: 22px;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+}
+
+.social-login-button .social-btn:hover {
+    opacity: .85;
+}
+
+#jbd-user-login.jbd-container .jbd-checkbox input {}
+
+.social-login-button .jbd-google-signin {
+    background-color: rgb(221, 75, 57);
+    border-color: rgb(221, 75, 57);
+    color: #fff !important;
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.social-login-button .jbd-google-signin i {
+    color: #fff !important;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.social-login-button .jbd-facebook-signin {
+    color: #fff !important;
+    float: right;
+    background: #4267b2;
+    border-color: #4267b2;
+    width: 100%;
+    cursor: pointer;
+}
+
+.social-login-button .jbd-facebook-signin i {
+    color: #fff !important;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.social-login-button .jbd-linkedin-signin {
+    color: #fff !important;
+    float: right;
+    background: #0E76A8 ;
+    border: 1px solid #084461;
+    width: 100%;
+    cursor: pointer;
+}
+
+.social-login-button .jbd-linkedin-signin i {
+    color: #fff !important;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+.jbd-user-has-account {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.jbd-user-menu {
+    float: left;
+}
+
+.jbd-user-menu .user-menu {
+    list-style: none;
+    padding: 0;
+    z-index: 98;
+    display: block;
+    position: relative;
+}
+
+.jbd-user-menu .user-menu>li {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    overflow: initial !important;
+}
+
+.jbd-user-menu .user-menu>li.menu-justify {
+    position: static;
+}
+
+.jbd-user-menu .user-menu>ul>li>a,
+.jbd-user-menu .user-menu>ul>li>span {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 14px;
+    margin: 0;
+}
+
+.jbd-user-menu .user-menu>li.active>a {
+    font-weight: 500;
+}
+
+.jbd-user-menu .user-menu>li .menu-badge {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-transform: uppercase;
+    background: #d60000;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.jbd-user-menu .user-menu .module {
+    padding: 10px;
+}
+
+.jbd-user-menu .user-menu .mega-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.jbd-user-menu .user-menu .mega-group>li>a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.jbd-user-menu .user-menu .mega-group .mega-group-child {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.jbd-user-menu .user-menu .dropdown {
+    background: #fff;
+    border-radius: 5px;
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    right: 0;
+}
+
+.jbd-user-menu .user-menu .dropdown .dropdown-inner {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.jbd-user-menu .user-menu .dropdown .dropdown-inner>.row:not(:first-child) {
+    margin-top: 20px;
+}
+
+.jbd-user-menu .user-menu .dropdown .dropdown-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block !important;
+    position: relative;
+    float: none;
+    left: 0;
+    top: 0;
+}
+
+.jbd-user-menu .user-menu .dropdown.dropdown-main {
+    top: 100%;
+    width: 200px;
+}
+
+.jbd-user-menu .user-menu .dropdown.dropdown-sub {
+    top: 0;
+}
+
+.jbd-user-menu .user-menu .dropdown.dropdown-sub .dropdown-inner {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.jbd-user-menu .user-menu .dropdown li.menu-item {
+    display: block;
+    line-height: 25px;
+    padding: 3px 0;
+    position: relative;
+    background-color: none;
+    text-transform: none;
+    background-color: transparent !important;
+    border: none;
+}
+
+.jbd-user-menu .user-menu .dropdown li.menu-item>a,
+.jbd-user-menu .user-menu .dropdown li.menu-item span:not(.menu-badge) {
+    font-size: 14px;
+    line-height: 1;
+    display: inline-block;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.jbd-user-menu .user-menu .dropdown li.menu-item>a.group-title,
+.jbd-user-menu .user-menu .dropdown li.menu-item span:not(.menu-badge).group-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.jbd-user-menu .user-menu .dropdown .module {
+    padding: 0;
+}
+
+.jbd-user-menu .user-menu .dropdown .module .module-title {
+    font-size: 14px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.jbd-user-menu .user-menu .has-child:hover>.dropdown {
+    display: block;
+}
+
+.jbd-user-menu .user-menu.menu-animation-fade .has-child:hover>.dropdown {
+    animation: userFadeIn 600ms;
+}
+
+.jbd-user-menu .user-menu.menu-animation-fade-up .has-child:hover>.dropdown {
+    animation: userFadeInUp 400ms ease-in;
+}
+
+.jbd-user-menu .user-menu.menu-animation-fade-down .has-child:hover>.dropdown {
+    animation: userFadeInDown 400ms ease-in;
+}
+
+.jbd-user-menu .user-menu.menu-animation-zoom .has-child:hover>.dropdown {
+    animation: spZoomIn 300ms;
+}
+
+.jbd-user-menu .user-menu.menu-animation-rotate .has-child:hover>.dropdown {
+    animation: spRotateIn 300ms;
+}
+
+.jbd-user-menu .user-menu.menu-animation-pulse .has-child:hover>.dropdown {
+    animation: spPulse 300ms;
+}
+
+@keyframes userFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes userFadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes userFadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 12px;
+    background: #e74c3c;
+    color: #fff;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    line-height: 17px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
+
+@media (max-width: 768px){
+    .jbd-user-menu .user-menu .dropdown{
+        right: auto;
+    }
+}
+
+@media (max-width: 470px){
+    .jbd-user-name{
+        display: none;
+    }
+}

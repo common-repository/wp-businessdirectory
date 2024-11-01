@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field
+            name="search"
+            type="text"
+            label="COM_JBD_FILTER_SEARCH_LABEL"
+            description="COM_JBD_FILTER_SEARCH_DESC"
+            hint="JSEARCH_FILTER"
+        />
+
+        <field
+            name="type_id"
+            type="list"
+            label=""
+            description=""
+            onchange="this.form.submit();"
+        >
+            <option value="">JSEARCH_FILTER_LABEL</option>
+            <option value="1">LNG_COMPANY_NAME</option>
+            <option value="2">LNG_NAME</option>
+            <option value="3">LNG_LAST_NAME</option>
+            <option value="4">LNG_EMAIL</option>
+            <option value="5">LNG_CONTACT_NAME</option>
+        </field>
+
+        <input type="hidden" name="form_submited" value="1"/>
+    </fields>
+
+    <fields name="list">
+        <field
+            name="fullordering"
+            type="list"
+            label="COM_CONTENT_LIST_FULL_ORDERING"
+            description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+            onchange="this.form.submit();"
+            default="cm.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="cm.name ASC">JGLOBAL_NAME_ASC</option>
+            <option value="cm.name DESC">JGLOBAL_NAME_DESC</option>
+            <option value="cm.surname ASC">JGLOBAL_SURNAME_ASC</option>
+            <option value="cm.surname DESC">JGLOBAL_SURNAME_DESC</option>
+            <option value="cm.email ASC">JGLOBAL_EMAIL_ASC</option>
+            <option value="cm.email DESC">JGLOBAL_EMAIL_DESC</option>
+            <option value="bc.name ASC">JGLOBAL_COMPANY_ASC</option>
+            <option value="bc.name DESC">JGLOBAL_COMPANY_DESC</option>
+            <option value="cc.contact_name ASC">JGLOBAL_CONTACT_NAME_ASC</option>
+            <option value="cc.contact_name DESC">JGLOBAL_CONTACT_NAME_DESC</option>
+            <option value="cm.id ASC">JGRID_HEADING_ID_ASC</option>
+            <option value="cm.id DESC">JGRID_HEADING_ID_DESC</option>
+        </field>
+
+        <field
+            name="limit"
+            type="limitbox"
+            label="COM_CONTENT_LIST_LIMIT"
+            description="COM_CONTENT_LIST_LIMIT_DESC"
+            class="input-mini"
+            default="25"
+            onchange="this.form.submit();"
+        />
+    </fields>
+</form>

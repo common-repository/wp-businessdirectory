@@ -1,0 +1,37 @@
+.main-categories .la.la-menu-arrow {
+	float: right;
+	line-height: 19px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.main-categories .active> a >.la.la-menu-arrow::before {
+	content: "\f110";
+}
+
+.main-categories .la.la-menu-arrow::before {
+	content: "\f111";
+}
+
+.offer-categories-slider .categories-slider-item .categories-slide-image {
+	margin: 0 auto;
+	width: 111px;
+	height: 111px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	border: 1px solid #dfdfdf;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Slide Title */
+.offer-categories-slider .categories-slider-item p {
+	color: #333;
+	font-size: 13px;
+	line-height: 1.2;
+	text-align: center;
+}

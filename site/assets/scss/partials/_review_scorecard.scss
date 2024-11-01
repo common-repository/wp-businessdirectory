@@ -1,0 +1,46 @@
+.jbd-container{
+    .rating.la {
+        color: #FFD43A;
+        font-size: 16px;
+    }
+
+    .result-item  .rating.la {
+        font-size: 16px;
+    }
+
+    .review-scorecard{
+        margin-bottom: 20px; 
+
+        .heading {
+            font-size: 25px;
+            margin-right: 25px;
+        }
+
+        .rating.la {
+            font-size: 20px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .bar-container {
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            color: white;
+        }
+
+        .bar-5 {height: 18px; background-color: #FFD43A;}
+        .bar-4 {height: 18px; background-color: #FFD43A;}
+        .bar-3 {height: 18px; background-color: #FFD43A;}
+        .bar-2 {height: 18px; background-color: #FFD43A;}
+        .bar-1 {height: 18px; background-color: #FFD43A;}
+    }
+
+    .rating-count{
+        display: inline;
+    }
+}

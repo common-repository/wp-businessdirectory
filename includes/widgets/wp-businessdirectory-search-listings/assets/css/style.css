@@ -1,0 +1,143 @@
+.search-style-2 #searchform .form-field {
+  margin: 0;
+  position: relative;
+}
+
+.search-style-2 #searchform #searchkeyword {
+  border-radius: 5px 0 0 5px;
+}
+
+.search-style-2 #searchform .form-field select, .search-style-2 #searchform .form-field input[type="text"] {
+  border-radius: 0;
+  width: 280px;
+}
+
+.search-style-2 .search-suggestions ul li {
+  padding: 0 4px;
+  ;
+}
+
+.search-style-2 .search-suggestions ul li div:hover {
+  color: #ffa8a0;
+  background-color: #fff;
+}
+
+.search-style-2 #searchform .search-dir-button {
+  border-radius: 0 5px 5px 0;
+}
+
+.search-suggestions:before {
+  border-color: transparent transparent #ffffff;
+  border-style: solid;
+  border-width: 0 7px 8px;
+  top: -8px;
+  content: "";
+  height: 0;
+  position: absolute;
+  left: 13px;
+  width: 0;
+}
+
+.search-suggestions {
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #afafaf;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0 rgba(80, 80, 80, 0.2);
+  color: #333333;
+  display: block;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 41px;
+  width: 684px;
+  z-index: 3;
+  font-size: 13px;
+  max-height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.search-suggestions ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  line-height: 27px;
+}
+
+.search-suggestions ul li {
+  cursor: pointer;
+  margin: 0;
+}
+
+
+.search-suggestions li.city-suggestion {
+  margin-left: 10px;
+}
+
+.search-suggestions .scol-3 {
+  display: inline-block;
+  vertical-align: top;
+  border-right: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  padding: 2%;
+  width: 32.8%;
+  text-align: left;
+}
+
+#location-search-suggestion {
+  width: 400px;
+}
+
+.search-suggestions .scol-2 {
+  display: inline-block;
+  vertical-align: top;
+  border-right: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  padding: 2%;
+  width: 48.8%;
+  text-align: left;
+}
+
+.search-suggestions .scol-3:last-child {
+  border-right: none;
+}
+
+.search-suggestions .scol-2:last-child {
+  border-right: none;
+}
+
+.listing-search-form {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 1024px) {
+  #searchform .form-field select, #searchform .form-field input[type="text"] {
+    width: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .search-suggestions {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 484px) {
+
+  .search-style-2 #searchform .form-field {
+    margin-bottom: 5px;
+  }
+
+  .search-suggestions .scol-3 {
+    width: 94%;
+    border: none;
+  }
+
+  .search-suggestions .scol-2 {
+    width: 94%;
+    border: none;
+  }
+}

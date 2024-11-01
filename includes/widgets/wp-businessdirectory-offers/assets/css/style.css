@@ -1,0 +1,152 @@
+/*-----------discount --------------*/
+#latest-offers-discount {
+    width: 100%;
+}
+#latest-offers-discount .offers-wrapper {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+}
+#latest-offers-discount .offer-item {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+}
+
+
+#latest-offers-discount .offer-item a{
+	color: #111;
+}
+
+#latest-offers-discount .offer-discount {
+    background-color: #c00074;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 7px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 25px;
+    width: auto;
+    z-index: 11111;
+}
+#latest-offers-discount .offer-content {
+    display: block;
+}
+
+#latest-offers-discount h3 {
+    color: #555;
+    font-size: 15px;
+    margin: 10px 0 5px 0;
+}
+#latest-offers-discount h3 a {
+    color: #555;
+}
+#latest-offers-discount .offer-image {
+    margin: 0;
+    padding: 0;
+}
+#latest-offers-discount .offer-image img {
+    width: 100%;
+}
+#latest-offers-discount .offer-description {
+    margin: 10px 0;
+}
+
+.latest-offers .view-all-items{
+	text-align: center;
+}
+
+.latest-offers .view-all-offers a{
+	background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 6px 18px;
+}
+
+.latest-offers .view-all-items a:hover{
+	background-color: #F0F0F0;	
+}
+
+#latest-offers-discount .offer-price {
+    display: block;
+    margin: 5px 0;
+    text-align: right;
+}
+.simple-view .offer-price{
+	text-align: center;
+}
+
+.offer-price .old-price {
+    font-size: 13px;
+    text-decoration: line-through;
+}
+#latest-offers-discount .offer-action {
+    display: block;
+    text-align: right;
+}
+
+/*-----------end discount --------------*/
+
+.view-all-offers{
+	display: block;
+	text-align: center;
+}
+
+.company-info{
+    padding: 10px 0;
+    margin: 0;
+    float: none;
+}
+
+.mod-items-list .list-item{
+	background-color: #fff;
+	
+}
+.mod-items-list .price{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.mod-items-list .item-name{
+	font-size: 16px;
+}
+
+.mod-items-list .listing-name{
+	font-size: 15px;
+}
+
+.mod-items-list .btn{
+	text-transform: none !important;
+}
+
+.mod-items-list .jitem-img-wrap{
+	height: 100%;
+}
+
+.mod-items-list .jitem-img-wrap > a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.mod-items-list .jitem-img-wrap > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

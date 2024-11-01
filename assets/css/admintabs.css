@@ -1,0 +1,73 @@
+dl.tabs dt h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+dl.tabs dt h3 a:link{
+	color:#333333;
+	outline:medium none;
+	text-decoration:none;
+}
+dl.tabs {
+	float: left;
+	margin: 10px 0 -1px 0;
+	z-index: 50;
+}
+
+dl.tabs dt {
+	float: left;
+	padding: 4px 10px;
+	border: 1px solid #ccc;
+	margin-left: 3px;
+	background: #F9F9F9;
+	color: #666;
+}
+
+dl.tabs dt.open {
+	background: #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	z-index: 100;
+	color: #000;
+}
+
+div.current {
+	clear: both;
+	border-top: 1px solid #ccc;
+	padding: 10px 10px;
+}
+
+div.current dd {
+	padding: 0;
+	margin: 0;
+}
+
+dl#content-pane.tabs {
+	margin: 1px 0 0 0;
+}
+
+div.current>label,
+div.current>span.faux-label {
+	display: block;
+	min-width: 150px;
+	float: left;
+	clear: left;
+	margin-top: 8px;
+}
+
+div.current fieldset {
+	border: none 0;
+	display:inline-block;
+}
+
+div.current fieldset.adminform {
+	border: 1px #ccc solid;
+    margin-right: 9px;
+}
+
+p.tab-description {
+	font-size: 1.091em;
+	margin-left: 0;
+	margin-top: 5px;
+}
